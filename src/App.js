@@ -1,12 +1,17 @@
+import 'tailwindcss/dist/base.css';
+import 'styles/globalStyles.css';
 import React from 'react';
-import './App.css';
+import { css } from 'styled-components/macro'; //eslint-disable-line
+import AnimationRevealPage from 'helpers/AnimationRevealPage';
+import HeroSecton from 'components/hsection/HeroSection';
 
-function App() {
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+export default function App() {
+  // return <AnimationRevealPage disabled></AnimationRevealPage>;
   return (
-    <div className='App'>
-      <header className='App-header'></header>
-    </div>
+    <AnimationRevealPage>
+      <HeroSecton />
+    </AnimationRevealPage>
   );
 }
-
-export default App;
