@@ -10,9 +10,9 @@ import { ReactComponent as CloseIcon } from 'feather-icons/dist/icons/x.svg';
 import ReactModalAdapter from '../../helpers/ReactModalAdapter.js';
 
 const Container = tw.div`relative`;
-const Content = tw.div`max-w-screen-xl mx-auto `;
+const Content = tw.div`max-w-screen-xl mx-auto`;
 
-const Heading = tw(SectionHeading)`py-5`;
+const Heading = tw(SectionHeading)`pb-5`;
 
 const WatchVideoButton = styled.button`
   ${tw`mt-4 sm:mt-0 sm:ml-8 flex items-center text-gray-100 transition duration-300 hocus:text-orange-500 focus:outline-none`}
@@ -37,7 +37,7 @@ const StyledModal = styled(ReactModalAdapter)`
 `;
 const CloseModalButton = tw.button`absolute top-0 right-0 mt-8 mr-8 hocus:text-primary-500`;
 
-const Card = tw.div`h-full flex! flex-col inline-block justify-center items-center mr-8 mb-3 sm:border max-w-sm sm:rounded-tl-4xl sm:rounded-br-5xl relative focus:outline-none`;
+const Card = tw.div`h-full flex! flex-col inline-block justify-center items-center ml-5 mb-3 sm:border max-w-sm sm:rounded-tl-4xl sm:rounded-br-5xl relative focus:outline-none transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-95`;
 const CardImage = styled.div((props) => [
   `background-image: url("${props.imageSrc}");`,
   tw`w-full h-56 sm:h-64 bg-cover bg-center rounded sm:rounded-none sm:rounded-tl-4xl`,
@@ -63,7 +63,8 @@ const PrimaryButton = tw(
   PrimaryButtonBase,
 )`mt-auto sm:text-lg rounded-none w-full rounded sm:rounded-none sm:rounded-br-3xl py-2 sm:py-4`;
 
-const AllButton = tw.button`inline-block justify-center items-center font-bold px-8 lg:px-10 py-3 rounded bg-primary-500 text-gray-100 hocus:bg-primary-700 focus:shadow-outline focus:outline-none transition duration-300 `;
+const AllButton = tw.div
+  .button`inline-block rounded justify-center items-center font-bold ml-5 px-8 lg:px-10 py-3 rounded bg-primary-500 text-gray-100 hocus:bg-primary-700 focus:shadow-outline focus:outline-none transition duration-300 `;
 
 export default () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
