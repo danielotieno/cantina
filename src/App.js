@@ -6,6 +6,7 @@ import AnimationRevealPage from 'helpers/AnimationRevealPage';
 import HeroSecton from 'components/hsection/HeroSection';
 import FeaturedCities from 'components/cards/FeaturedCities';
 import FeaturedFood from 'components/cards/FeaturedFood';
+import InstagramFeed from 'components/cards/InstgramFeed';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -16,6 +17,7 @@ export default function App() {
       <HeroSecton />
       <FeaturedCities />
       <FeaturedFood />
+      <InstagramFeed />
     </AnimationRevealPage>
   );
 }

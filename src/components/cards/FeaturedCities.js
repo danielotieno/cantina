@@ -63,9 +63,9 @@ const PrimaryButton = tw(
   PrimaryButtonBase,
 )`mt-auto sm:text-lg rounded-none w-full rounded sm:rounded-none sm:rounded-br-3xl py-2 sm:py-4`;
 
-const ButtonContainer = tw.div`flex justify-center`;
+const ButtonContainer = tw.div`flex justify-center mt-3`;
 
-const AllButton = tw.button`inline-block rounded justify-center items-center font-bold mt-2 px-8 lg:px-10 py-3 rounded bg-orange-600 text-gray-100 hocus:bg-orange-800 focus:shadow-outline focus:outline-none transition duration-300 `;
+const AllButton = tw.button`inline-block rounded justify-center items-center font-bold px-8 lg:px-10 py-3 rounded bg-orange-600 text-gray-100 hocus:bg-orange-800 focus:shadow-outline focus:outline-none transition duration-300 `;
 
 export default () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
