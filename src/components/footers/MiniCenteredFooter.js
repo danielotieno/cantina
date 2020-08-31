@@ -16,6 +16,7 @@ const Row = tw.div`flex items-center justify-center flex-col px-8`;
 const LogoContainer = tw.div`flex items-center justify-center md:justify-start`;
 const LogoImg = tw.img`w-8`;
 const LogoText = tw.h5`ml-2 text-2xl font-black tracking-wider`;
+const ConnectText = tw.h5`ml-6 items-center text-2xl pb-4 font-black tracking-wider`;
 
 const LinksContainer = tw.div`mt-8 font-medium flex flex-wrap justify-center items-center flex-col sm:flex-row`;
 const Link = tw.a`border-b-2 border-transparent hocus:text-gray-300 hocus:border-gray-300 pb-1 transition duration-300 mt-2 mx-4`;
@@ -46,17 +47,18 @@ export default () => {
             <Link href='#'>Contact Us</Link>
           </LinksContainer>
           <SocialLinksContainer>
+            <ConnectText>Connect With Us</ConnectText>
             <SocialLink href='https://facebook.com'>
               <FacebookIcon />
             </SocialLink>
             <SocialLink href='https://facebook.com'>
               <InstagramIcon />
             </SocialLink>
-            <SocialLink href='https://twitter.com'>
-              <TwitterIcon />
-            </SocialLink>
             <SocialLink href='https://youtube.com'>
               <YoutubeIcon />
+            </SocialLink>
+            <SocialLink href='https://twitter.com'>
+              <TwitterIcon />
             </SocialLink>
           </SocialLinksContainer>
           <CopyrightText>

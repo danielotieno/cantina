@@ -1,6 +1,7 @@
 import 'tailwindcss/dist/base.css';
 import 'styles/globalStyles.css';
 import React from 'react';
+import ScrollToTop from 'react-scroll-to-top';
 import { css } from 'styled-components/macro'; //eslint-disable-line
 import AnimationRevealPage from 'helpers/AnimationRevealPage';
 import HeroSecton from 'components/hsection/HeroSection';
@@ -15,6 +16,7 @@ export default function App() {
   // return <AnimationRevealPage disabled></AnimationRevealPage>;
   return (
     <AnimationRevealPage>
+      <ScrollToTop smooth />
       <HeroSecton />
       <FeaturedCities />
       <FeaturedFood />
