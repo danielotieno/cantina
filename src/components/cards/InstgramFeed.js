@@ -18,7 +18,7 @@ export default () => {
       url: 'https://www.instagram.com/p/B_qJVdMH739/',
     },
     {
-      url: 'https://www.instagram.com/p/B_0T1eFHgiK/',
+      url: 'https://www.instagram.com/p/B8Tw_1JHLT7/',
     },
     {
       url: 'https://www.instagram.com/p/B99XGD4HJws/',
