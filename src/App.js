@@ -4,7 +4,8 @@ import React from 'react';
 import { css } from 'styled-components/macro'; //eslint-disable-line
 import AnimationRevealPage from 'helpers/AnimationRevealPage';
 import HeroSecton from 'components/hsection/HeroSection';
-import Cities from 'components/cards/Cities';
+import FeaturedCities from 'components/cards/FeaturedCities';
+import FeaturedFood from 'components/cards/FeaturedFood';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -13,7 +14,8 @@ export default function App() {
   return (
     <AnimationRevealPage>
       <HeroSecton />
-      <Cities />
+      <FeaturedCities />
+      <FeaturedFood />
     </AnimationRevealPage>
   );
 }
