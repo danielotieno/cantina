@@ -39,8 +39,9 @@ const CardText = tw.div`p-4 text-gray-900`;
 const CardTitle = tw.h5`text-lg font-semibold group-hover:text-primary-500`;
 const CardContent = tw.p`mt-1 text-sm font-medium text-gray-600`;
 
-const AllButton = tw.div
-  .button`inline-block rounded justify-center items-center font-bold mt-4 px-8 lg:px-10 py-3 rounded bg-orange-600 text-gray-100 hocus:bg-orange-800 focus:shadow-outline focus:outline-none transition duration-300 `;
+const ButtonContainer = tw.div`flex justify-center`;
+
+const AllButton = tw.button`inline-block rounded justify-center items-center font-bold mt-4 px-8 lg:px-10 py-3 rounded bg-orange-600 text-gray-100 hocus:bg-orange-800 focus:shadow-outline focus:outline-none transition duration-300 `;
 
 const DecoratorBlob1 = styled(SvgDecoratorBlob1)`
   ${tw`pointer-events-none -z-20 absolute right-0 top-0 h-64 w-64 opacity-15 transform translate-x-2/3 -translate-y-12 text-pink-400`}
@@ -56,8 +57,7 @@ export default () => {
         'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80',
       title: 'Veg Mixer',
       content: 'Tomato Salad & Carrot',
-      url:
-        '<iframe width="560" height="315" src="https://www.youtube.com/embed/ckNlEj8PMUI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+      url: 'https://youtu.be/BXCX-Lx3MNE',
     },
     {
       imageSrc:
@@ -131,9 +131,11 @@ export default () => {
             </CardContainer>
           ))}
         </TabContent>
-        <AllButton as='a' href='#'>
-          Explore All Food Vlogs
-        </AllButton>
+        <ButtonContainer>
+          <AllButton as='a' href='#'>
+            Explore All Food Vlogs
+          </AllButton>
+        </ButtonContainer>
       </ContentWithPaddingXl>
       <DecoratorBlob1 />
       <DecoratorBlob2 />

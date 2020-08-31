@@ -63,8 +63,9 @@ const PrimaryButton = tw(
   PrimaryButtonBase,
 )`mt-auto sm:text-lg rounded-none w-full rounded sm:rounded-none sm:rounded-br-3xl py-2 sm:py-4`;
 
-const AllButton = tw.div
-  .button`inline-block rounded justify-center items-center font-bold mt-1 ml-5 px-8 lg:px-10 py-3 rounded bg-orange-600 text-gray-100 hocus:bg-orange-800 focus:shadow-outline focus:outline-none transition duration-300 `;
+const ButtonContainer = tw.div`flex justify-center`;
+
+const AllButton = tw.button`inline-block rounded justify-center items-center font-bold mt-2 px-8 lg:px-10 py-3 rounded bg-orange-600 text-gray-100 hocus:bg-orange-800 focus:shadow-outline focus:outline-none transition duration-300 `;
 
 export default () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -150,9 +151,11 @@ export default () => {
             </StyledModal>
           </Card>
         ))}
-        <AllButton as='a' href='#'>
-          Explore All Tours
-        </AllButton>
+        <ButtonContainer>
+          <AllButton as='a' href='#'>
+            Explore All Tours
+          </AllButton>
+        </ButtonContainer>
       </Content>
     </Container>
   );
