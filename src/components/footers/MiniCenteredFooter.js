@@ -61,7 +61,7 @@ export default () => {
           <SocialLinksContainer>
             <ConnectText>Connect With Us</ConnectText>
             <SocialLink>
-              <ExternalLink href='https://www.instagram.com/daves_cantina/'>
+              <ExternalLink href='https://www.facebook.com/Daves-Cantina-116181430210505/'>
                 <FacebookIcon />
               </ExternalLink>
             </SocialLink>

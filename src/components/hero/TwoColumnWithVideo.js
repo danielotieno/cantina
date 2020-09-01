@@ -115,50 +115,48 @@ export default ({
   ];
 
   return (
-    <>
-      <Container>
-        <OpacityOverlay />
-        <HeroContainer>
-          <StyledHeader links={navLinks} />
-          <TwoColumn>
-            <LeftColumn>
-              <Heading>{heading}</Heading>
-              <Paragraph>{description}</Paragraph>
-              <Actions>
-                <PrimaryButton>
-                  <Link to='/tours'>{primaryButtonText}</Link>
-                </PrimaryButton>
-                <WatchVideoButton onClick={toggleModal}>
-                  <span className='playIconContainer'>
-                    <PlayIcon className='playIcon' />
-                  </span>
-                  <span className='playText'>{watchVideoButtonText}</span>
-                </WatchVideoButton>
-              </Actions>
-            </LeftColumn>
-            <RightColumn>
-              <IllustrationContainer>
-                <img css={imageCss} src={imageSrc} alt='Hero' />
-                {imageDecoratorBlob && <DecoratorBlob2 />}
-              </IllustrationContainer>
-            </RightColumn>
-          </TwoColumn>
-          <DecoratorBlob1 />
-          <StyledModal
-            closeTimeoutMS={300}
-            className='mainHeroModal'
-            isOpen={modalIsOpen}
-            onRequestClose={toggleModal}
-            shouldCloseOnOverlayClick={true}>
-            <CloseModalButton onClick={toggleModal}>
-              <CloseIcon tw='w-6 h-6' />
-            </CloseModalButton>
-            <div className='content'>
-              <ResponsiveVideoEmbed url={watchVideoYoutubeUrl} tw='w-full' />
-            </div>
-          </StyledModal>
-        </HeroContainer>
-      </Container>
-    </>
+    <Container>
+      <OpacityOverlay />
+      <HeroContainer>
+        <StyledHeader links={navLinks} />
+        <TwoColumn>
+          <LeftColumn>
+            <Heading>{heading}</Heading>
+            <Paragraph>{description}</Paragraph>
+            <Actions>
+              <PrimaryButton>
+                <Link to='/tours'>{primaryButtonText}</Link>
+              </PrimaryButton>
+              <WatchVideoButton onClick={toggleModal}>
+                <span className='playIconContainer'>
+                  <PlayIcon className='playIcon' />
+                </span>
+                <span className='playText'>{watchVideoButtonText}</span>
+              </WatchVideoButton>
+            </Actions>
+          </LeftColumn>
+          <RightColumn>
+            <IllustrationContainer>
+              <img css={imageCss} src={imageSrc} alt='Hero' />
+              {imageDecoratorBlob && <DecoratorBlob2 />}
+            </IllustrationContainer>
+          </RightColumn>
+        </TwoColumn>
+        <DecoratorBlob1 />
+        <StyledModal
+          closeTimeoutMS={300}
+          className='mainHeroModal'
+          isOpen={modalIsOpen}
+          onRequestClose={toggleModal}
+          shouldCloseOnOverlayClick={true}>
+          <CloseModalButton onClick={toggleModal}>
+            <CloseIcon tw='w-6 h-6' />
+          </CloseModalButton>
+          <div className='content'>
+            <ResponsiveVideoEmbed url={watchVideoYoutubeUrl} tw='w-full' />
+          </div>
+        </StyledModal>
+      </HeroContainer>
+    </Container>
   );
 };
