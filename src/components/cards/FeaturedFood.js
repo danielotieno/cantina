@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { ExternalLink } from 'react-external-link';
 import { motion } from 'framer-motion';
 import tw from 'twin.macro';
 import styled from 'styled-components';
@@ -102,33 +103,34 @@ export default () => {
           transition={{ duration: 0.4 }}>
           {food.map((card, index) => (
             <CardContainer key={index}>
-              <Card
-                className='group'
-                href={card.url}
-                initial='rest'
-                whileHover='hover'
-                animate='rest'>
-                <CardImageContainer imageSrc={card.imageSrc}>
-                  <CardHoverOverlay
-                    variants={{
-                      hover: {
-                        opacity: 1,
-                        height: 'auto',
-                      },
-                      rest: {
-                        opacity: 0,
-                        height: 0,
-                      },
-                    }}
-                    transition={{ duration: 0.3 }}>
-                    <CardButton>Watch Now</CardButton>
-                  </CardHoverOverlay>
-                </CardImageContainer>
-                <CardText>
-                  <CardTitle>{card.title}</CardTitle>
-                  <CardContent>{card.content}</CardContent>
-                </CardText>
-              </Card>
+              <ExternalLink href={card.url}>
+                <Card
+                  className='group'
+                  initial='rest'
+                  whileHover='hover'
+                  animate='rest'>
+                  <CardImageContainer imageSrc={card.imageSrc}>
+                    <CardHoverOverlay
+                      variants={{
+                        hover: {
+                          opacity: 1,
+                          height: 'auto',
+                        },
+                        rest: {
+                          opacity: 0,
+                          height: 0,
+                        },
+                      }}
+                      transition={{ duration: 0.3 }}>
+                      <CardButton>Watch Now</CardButton>
+                    </CardHoverOverlay>
+                  </CardImageContainer>
+                  <CardText>
+                    <CardTitle>{card.title}</CardTitle>
+                    <CardContent>{card.content}</CardContent>
+                  </CardText>
+                </Card>
+              </ExternalLink>
             </CardContainer>
           ))}
         </TabContent>
