@@ -86,9 +86,9 @@ export default ({
     collapseBreakPointCssMap[collapseBreakpointClass];
 
   const defaultLogoLink = (
-    <LogoLink href='/'>
+    <LogoLink>
       <img src={logo} alt='logo' />
-      Dave's Cantina
+      <Link to='/'>Dave's Cantina</Link>
     </LogoLink>
   );
 

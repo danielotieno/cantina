@@ -21,9 +21,11 @@ export default () => {
                 loop={Infinity}
                 wrapper='p'
                 steps={[
-                  'is not a State of Life',
+                  'We Laugh 😂',
                   1000,
-                  'it’s a State of Mind',
+                  'We Live 🍾',
+                  1000,
+                  'We Love 💕',
                   1000,
                 ]}
               />

@@ -86,8 +86,7 @@ const CloseModalButton = tw.button`absolute top-0 right-0 mt-8 mr-8 hocus:text-p
 export default ({
   heading = 'Modern React Templates, Just For You',
   description = 'Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.',
-  primaryButtonText = 'Get Started',
-  primaryButtonUrl = '#',
+  primaryButtonText = '',
   watchVideoButtonText = 'Watch Video',
   watchVideoYoutubeUrl = 'https://www.youtube.com/embed/zdJMReSUIos',
   imageSrc = DesignIllustration,
@@ -126,8 +125,8 @@ export default ({
               <Heading>{heading}</Heading>
               <Paragraph>{description}</Paragraph>
               <Actions>
-                <PrimaryButton as='a' href={primaryButtonUrl}>
-                  {primaryButtonText}
+                <PrimaryButton>
+                  <Link to='/tours'>{primaryButtonText}</Link>
                 </PrimaryButton>
                 <WatchVideoButton onClick={toggleModal}>
                   <span className='playIconContainer'>

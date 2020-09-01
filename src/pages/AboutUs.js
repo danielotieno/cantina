@@ -38,7 +38,6 @@ export default () => {
         />
         <TeamCardGrid />
       </AnimationRevealPage>
-
       <MiniCenteredFooter />
     </>
   );
