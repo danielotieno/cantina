@@ -60,16 +60,20 @@ export default () => {
           </LinksContainer>
           <SocialLinksContainer>
             <ConnectText>Connect With Us</ConnectText>
-            <SocialLink href='https://facebook.com'>
-              <FacebookIcon />
+            <SocialLink>
+              <ExternalLink href='https://www.instagram.com/daves_cantina/'>
+                <FacebookIcon />
+              </ExternalLink>
+            </SocialLink>
+            <SocialLink>
+              <ExternalLink href='https://www.youtube.com/channel/UClls_utth_273YWv-WLqPVw'>
+                <YoutubeIcon />
+              </ExternalLink>
             </SocialLink>
             <SocialLink>
               <ExternalLink href='https://www.instagram.com/daves_cantina/'>
                 <InstagramIcon />
               </ExternalLink>
-            </SocialLink>
-            <SocialLink href='https://youtube.com'>
-              <YoutubeIcon />
             </SocialLink>
             <SocialLink>
               <ExternalLink href='https://twitter.com/DavesCantina?s=08'>
