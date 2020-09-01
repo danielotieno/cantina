@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import tw from 'twin.macro';
 import styled from 'styled-components';
 import { SectionHeading } from 'components/misc/Headings';
@@ -65,10 +64,6 @@ const Text = tw.div`ml-2 text-sm font-semibold text-gray-800`;
 const PrimaryButton = tw(
   PrimaryButtonBase,
 )`mt-auto sm:text-lg rounded-none w-full rounded sm:rounded-none sm:rounded-br-3xl py-2 sm:py-4`;
-
-const ButtonContainer = tw.div`flex justify-center mt-3`;
-
-const AllButton = tw.button`inline-block rounded justify-center items-center font-bold px-8 lg:px-10 py-3 rounded bg-orange-600 text-gray-100 hocus:bg-orange-800 focus:shadow-outline focus:outline-none transition duration-300 `;
 
 export default () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);

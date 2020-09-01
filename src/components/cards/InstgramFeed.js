@@ -1,7 +1,6 @@
 import React from 'react';
 import InstagramEmbed from 'react-instagram-embed';
 import tw from 'twin.macro';
-import styled from 'styled-components';
 import { SectionHeading } from 'components/misc/Headings';
 
 const Container = tw.div`relative`;
