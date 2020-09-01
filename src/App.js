@@ -7,6 +7,7 @@ import AnimationRevealPage from 'helpers/AnimationRevealPage';
 import Home from 'pages/Home';
 import AboutUs from 'pages/AboutUs';
 import Tours from 'pages/Tours';
+import Food from 'pages/Food';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -20,7 +21,7 @@ export default function App() {
           <Route exact path='/' component={Home} />
           <Route exact path='/about-us' component={AboutUs} />
           <Route exact path='/tours' component={Tours} />
-          <Route exact path='/food' component={AboutUs} />
+          <Route exact path='/food' component={Food} />
           <Route exact path='/contact-us' component={AboutUs} />
         </Switch>
       </Router>
