@@ -6,7 +6,7 @@ import { SectionHeading } from 'components/misc/Headings';
 const Container = tw.div`relative`;
 const Heading = tw(SectionHeading)`pb-5`;
 
-const PostsContainer = tw.div`inline-block px-5 items-center `;
+const PostsContainer = tw.div`inline-block sm:px-5 items-center`;
 
 export default () => {
   const posts = [
