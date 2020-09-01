@@ -3,10 +3,7 @@ import tw from 'twin.macro';
 import styled from 'styled-components';
 import { css } from 'styled-components/macro';
 import { Container, ContentWithPaddingXl } from 'components/misc/Layouts.js';
-import {
-  SectionHeading,
-  Subheading as SubheadingBase,
-} from 'components/misc/Headings';
+import { SectionHeading } from 'components/misc/Headings';
 import { SectionDescription } from 'components/misc/Typography';
 import { ReactComponent as TwitterIcon } from 'images/twitter-icon.svg';
 import { ReactComponent as InstagramIcon } from 'images/insta.svg';
@@ -17,7 +14,6 @@ import Fred from 'images/fred.jpg';
 
 const HeadingContainer = tw.div``;
 const Heading = tw(SectionHeading)``;
-const Subheading = tw(SubheadingBase)`text-center mb-3`;
 const Description = tw(SectionDescription)`mx-auto text-center`;
 
 const Cards = tw.div`flex flex-wrap flex-row justify-center sm:max-w-2xl lg:max-w-5xl mx-auto`;
@@ -51,7 +47,6 @@ const CardLinks = styled.div`
 
 export default ({
   heading = 'Meet The Team',
-  // subheading = 'Our Team',
   description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   cards = [
     {

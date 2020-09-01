@@ -18,20 +18,17 @@ export default () => {
       <AnimationRevealPage>
         <Header />
         <MainFeature1
-          // subheading={<Subheading>About Us</Subheading>}
           heading='About us'
           buttonRounded={false}
           imageSrc={AtImg}
         />
         <MainFeature1
-          // subheading={<Subheading>Our Vision</Subheading>}
           heading='Our Mission'
           buttonRounded={false}
           imageSrc={AttImg}
           textOnLeft={false}
         />
         <Features
-          // subheading={<Subheading>Our Values</Subheading>}
           heading='Our Vision'
           description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
           linkText=''
