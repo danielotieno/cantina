@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { ExternalLink } from 'react-external-link';
 import tw from 'twin.macro';
 import styled from 'styled-components';
 import { Container as ContainerBase } from 'components/misc/Layouts.js';
@@ -62,14 +63,18 @@ export default () => {
             <SocialLink href='https://facebook.com'>
               <FacebookIcon />
             </SocialLink>
-            <SocialLink href='https://facebook.com'>
-              <InstagramIcon />
+            <SocialLink>
+              <ExternalLink href='https://www.instagram.com/daves_cantina/'>
+                <InstagramIcon />
+              </ExternalLink>
             </SocialLink>
             <SocialLink href='https://youtube.com'>
               <YoutubeIcon />
             </SocialLink>
-            <SocialLink href='https://twitter.com'>
-              <TwitterIcon />
+            <SocialLink>
+              <ExternalLink href='https://twitter.com/DavesCantina?s=08'>
+                <TwitterIcon />
+              </ExternalLink>
             </SocialLink>
           </SocialLinksContainer>
           <CopyrightText>
