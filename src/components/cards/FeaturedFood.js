@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import tw from 'twin.macro';
 import styled from 'styled-components';
@@ -132,8 +133,8 @@ export default () => {
           ))}
         </TabContent>
         <ButtonContainer>
-          <AllButton as='a' href='#'>
-            Explore All Food Vlogs
+          <AllButton>
+            <Link to='/food'>Explore All Food Vlogs</Link>
           </AllButton>
         </ButtonContainer>
       </ContentWithPaddingXl>

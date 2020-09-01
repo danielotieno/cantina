@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import tw from 'twin.macro';
 import styled from 'styled-components';
 import { Container as ContainerBase } from 'components/misc/Layouts.js';
@@ -19,7 +20,7 @@ const LogoText = tw.h5`ml-2 text-2xl font-black tracking-wider`;
 const ConnectText = tw.h5`ml-6 items-center text-2xl pb-4 font-black tracking-wider`;
 
 const LinksContainer = tw.div`mt-8 font-medium flex flex-wrap justify-center items-center flex-col sm:flex-row`;
-const Link = tw.a`border-b-2 border-transparent hocus:text-gray-300 hocus:border-gray-300 pb-1 transition duration-300 mt-2 mx-4`;
+const FooterLink = tw.a`border-b-2 border-transparent hocus:text-gray-300 hocus:border-gray-300 pb-1 transition duration-300 mt-2 mx-4`;
 
 const SocialLinksContainer = tw.div`mt-10`;
 const SocialLink = styled.a`
@@ -40,11 +41,21 @@ export default () => {
             <LogoText>Dave's Cantina</LogoText>
           </LogoContainer>
           <LinksContainer>
-            <Link href='#'>Home</Link>
-            <Link href='#'>About</Link>
-            <Link href='#'>Cities Tour</Link>
-            <Link href='#'>Food</Link>
-            <Link href='#'>Contact Us</Link>
+            <FooterLink>
+              <Link to='/'>Home</Link>
+            </FooterLink>
+            <FooterLink>
+              <Link to='/about-us'>About</Link>
+            </FooterLink>
+            <FooterLink>
+              <Link to='/tours'>Tours</Link>
+            </FooterLink>
+            <FooterLink>
+              <Link to='/food'>Food</Link>
+            </FooterLink>
+            <FooterLink>
+              <Link to='/contact-us'>Contact Us</Link>
+            </FooterLink>
           </LinksContainer>
           <SocialLinksContainer>
             <ConnectText>Connect With Us</ConnectText>

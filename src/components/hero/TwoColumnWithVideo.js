@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import tw from 'twin.macro';
 //eslint-disable-next-line
@@ -99,11 +100,18 @@ export default ({
 
   const navLinks = [
     <NavLinks key={1}>
-      <NavLink href='#'>About</NavLink>
-      <NavLink href='#'>Cities Tour</NavLink>
-      <NavLink href='#'>Food Videos</NavLink>
-      <NavLink href='#'>Gallery</NavLink>
-      <NavLink href='#'>Contact Us</NavLink>
+      <NavLink>
+        <Link to='/about-us'>About</Link>
+      </NavLink>
+      <NavLink>
+        <Link to='/tours'>Tours</Link>
+      </NavLink>
+      <NavLink>
+        <Link to='/food'>Food</Link>
+      </NavLink>
+      <NavLink>
+        <Link to='/contact-us'>Contact Us</Link>
+      </NavLink>
     </NavLinks>,
   ];
 

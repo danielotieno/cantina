@@ -8,12 +8,14 @@ import { ReactComponent as LocationIcon } from 'feather-icons/dist/icons/map-pin
 import ResponsiveVideoEmbed from 'helpers/ResponsiveVideoEmbed';
 import { ReactComponent as PlayIcon } from 'feather-icons/dist/icons/play-circle.svg';
 import { ReactComponent as CloseIcon } from 'feather-icons/dist/icons/x.svg';
-import ReactModalAdapter from '../../helpers/ReactModalAdapter.js';
+import ReactModalAdapter from 'helpers/ReactModalAdapter.js';
+import Header from 'components/headers/light.js';
+import MiniCenteredFooter from 'components/footers/MiniCenteredFooter';
 
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto`;
 
-const Heading = tw(SectionHeading)`pb-5`;
+const Heading = tw(SectionHeading)`mt-8 pb-5`;
 
 const WatchVideoButton = styled.button`
   ${tw`mt-4 sm:mt-0 sm:ml-8 flex items-center text-gray-100 transition duration-300 hocus:text-orange-500 focus:outline-none`}
@@ -104,11 +106,72 @@ export default () => {
       watchVideoYoutubeUrl: 'https://www.youtube.com/embed/zdJMReSUIos',
       watchVideoButtonText: 'Watch Now!',
     },
+    {
+      imageSrc:
+        'https://images.unsplash.com/photo-1549294413-26f195200c16?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80',
+      title: 'Wasini Island',
+      description:
+        'Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.',
+      locationText: 'Kwale, Kenya',
+      watchVideoYoutubeUrl: 'https://www.youtube.com/embed/zdJMReSUIos',
+      watchVideoButtonText: 'Watch Now!',
+    },
+    {
+      imageSrc:
+        'https://images.unsplash.com/photo-1549294413-26f195200c16?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80',
+      title: 'Wasini Island',
+      description:
+        'Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.',
+      locationText: 'Kwale, Kenya',
+      watchVideoYoutubeUrl: 'https://www.youtube.com/embed/zdJMReSUIos',
+      watchVideoButtonText: 'Watch Now!',
+    },
+    {
+      imageSrc:
+        'https://images.unsplash.com/photo-1549294413-26f195200c16?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80',
+      title: 'Wasini Island',
+      description:
+        'Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.',
+      locationText: 'Kwale, Kenya',
+      watchVideoYoutubeUrl: 'https://www.youtube.com/embed/zdJMReSUIos',
+      watchVideoButtonText: 'Watch Now!',
+    },
+    {
+      imageSrc:
+        'https://images.unsplash.com/photo-1549294413-26f195200c16?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80',
+      title: 'Wasini Island',
+      description:
+        'Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.',
+      locationText: 'Kwale, Kenya',
+      watchVideoYoutubeUrl: 'https://www.youtube.com/embed/zdJMReSUIos',
+      watchVideoButtonText: 'Watch Now!',
+    },
+    {
+      imageSrc:
+        'https://images.unsplash.com/photo-1549294413-26f195200c16?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80',
+      title: 'Wasini Island',
+      description:
+        'Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.',
+      locationText: 'Kwale, Kenya',
+      watchVideoYoutubeUrl: 'https://www.youtube.com/embed/zdJMReSUIos',
+      watchVideoButtonText: 'Watch Now!',
+    },
+    {
+      imageSrc:
+        'https://images.unsplash.com/photo-1549294413-26f195200c16?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80',
+      title: 'Wasini Island',
+      description:
+        'Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.',
+      locationText: 'Kwale, Kenya',
+      watchVideoYoutubeUrl: 'https://www.youtube.com/embed/zdJMReSUIos',
+      watchVideoButtonText: 'Watch Now!',
+    },
   ];
   return (
     <Container>
+      <Header />
       <Content>
-        <Heading>Featured Tours</Heading>
+        <Heading>All Tours</Heading>
         {cards.map((card, index) => (
           <Card key={index}>
             <CardImage imageSrc={card.imageSrc} />
@@ -152,12 +215,8 @@ export default () => {
             </StyledModal>
           </Card>
         ))}
-        <ButtonContainer>
-          <AllButton>
-            <Link to='/tours'>Explore All Tours</Link>
-          </AllButton>
-        </ButtonContainer>
       </Content>
+      <MiniCenteredFooter />
     </Container>
   );
 };
