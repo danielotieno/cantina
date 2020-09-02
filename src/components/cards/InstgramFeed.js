@@ -3,10 +3,11 @@ import InstagramEmbed from 'react-instagram-embed';
 import tw from 'twin.macro';
 import { SectionHeading } from 'components/misc/Headings';
 
-const Container = tw.div`relative`;
+import { Container } from 'components/misc/Layouts.js';
 const Heading = tw(SectionHeading)`pb-5`;
+const Content = tw.div`max-w-screen-xl mx-auto`;
 
-const PostsContainer = tw.div`inline-block sm:px-5 items-center`;
+const PostsContainer = tw.div`inline-block items-center`;
 
 export default () => {
   const posts = [
@@ -25,23 +26,25 @@ export default () => {
   ];
   return (
     <Container>
-      <Heading>Follow Us on Instagram</Heading>
-      {posts.map((post, index) => (
-        <PostsContainer key={index}>
-          <InstagramEmbed
-            url={post.url}
-            maxWidth={320}
-            hideCaption={true}
-            containerTagName='div'
-            protocol=''
-            injectScript
-            onLoading={() => {}}
-            onSuccess={() => {}}
-            onAfterRender={() => {}}
-            onFailure={() => {}}
-          />
-        </PostsContainer>
-      ))}
+      <Content>
+        <Heading>Follow Us on Instagram</Heading>
+        {posts.map((post, index) => (
+          <PostsContainer key={index}>
+            <InstagramEmbed
+              url={post.url}
+              maxWidth={320}
+              hideCaption={true}
+              containerTagName='div'
+              protocol=''
+              injectScript
+              onLoading={() => {}}
+              onSuccess={() => {}}
+              onAfterRender={() => {}}
+              onFailure={() => {}}
+            />
+          </PostsContainer>
+        ))}
+      </Content>
     </Container>
   );
 };
