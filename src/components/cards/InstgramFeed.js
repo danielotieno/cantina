@@ -12,7 +12,7 @@ const ThreeColumnContainer = styled.div`
   ${tw`flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-lg mx-auto py-20 md:py-10`}
 `;
 
-const PostsContainer = tw.div`inline-block px-2 items-center`;
+const PostsContainer = tw.div`inline-block pr-3 items-center`;
 
 export default () => {
   const posts = [
