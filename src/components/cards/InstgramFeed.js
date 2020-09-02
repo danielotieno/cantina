@@ -5,9 +5,9 @@ import { SectionHeading } from 'components/misc/Headings';
 
 import { Container } from 'components/misc/Layouts.js';
 const Heading = tw(SectionHeading)`pb-5`;
-const Content = tw.div`max-w-screen-xl mx-auto`;
+// const Content = tw.div`max-w-screen-xl mx-auto`;
 
-const PostsContainer = tw.div`inline-block items-center`;
+const PostsContainer = tw.div`inline-block px-5 items-center`;
 
 export default () => {
   const posts = [
@@ -26,25 +26,23 @@ export default () => {
   ];
   return (
     <Container>
-      <Content>
-        <Heading>Follow Us on Instagram</Heading>
-        {posts.map((post, index) => (
-          <PostsContainer key={index}>
-            <InstagramEmbed
-              url={post.url}
-              maxWidth={320}
-              hideCaption={true}
-              containerTagName='div'
-              protocol=''
-              injectScript
-              onLoading={() => {}}
-              onSuccess={() => {}}
-              onAfterRender={() => {}}
-              onFailure={() => {}}
-            />
-          </PostsContainer>
-        ))}
-      </Content>
+      <Heading>Follow Us on Instagram</Heading>
+      {posts.map((post, index) => (
+        <PostsContainer key={index}>
+          <InstagramEmbed
+            url={post.url}
+            maxWidth={320}
+            hideCaption={true}
+            containerTagName='div'
+            protocol=''
+            injectScript
+            onLoading={() => {}}
+            onSuccess={() => {}}
+            onAfterRender={() => {}}
+            onFailure={() => {}}
+          />
+        </PostsContainer>
+      ))}
     </Container>
   );
 };
