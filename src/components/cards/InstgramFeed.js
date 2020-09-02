@@ -9,10 +9,10 @@ const Heading = tw(SectionHeading)`pb-5`;
 // const Content = tw.div`max-w-screen-xl mx-auto`;
 
 const ThreeColumnContainer = styled.div`
-  ${tw`flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-lg mx-auto py-20 md:py-10`}
+  ${tw`flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-lg mx-auto py-10 md:py-10`}
 `;
 
-const PostsContainer = tw.div`inline-block pr-3 items-center`;
+const PostsContainer = tw.div`inline-block pr-5 items-center`;
 
 export default () => {
   const posts = [
