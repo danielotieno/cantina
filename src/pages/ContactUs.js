@@ -52,8 +52,8 @@ export default ({
   ),
   description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   submitButtonText = 'Send',
-  formAction = '#',
-  formMethod = 'get',
+  formAction = 'https://formspree.io/xzbjnore',
+  formMethod = 'POST',
   textOnLeft = true,
 }) => {
   // The textOnLeft boolean prop can be used to display either the text on left or right side of the image.
@@ -76,10 +76,25 @@ export default ({
                   type='email'
                   name='email'
                   placeholder='Your Email Address'
+                  required
                 />
-                <Input type='text' name='name' placeholder='Full Name' />
-                <Input type='text' name='subject' placeholder='Subject' />
-                <Textarea name='message' placeholder='Your Message Here' />
+                <Input
+                  type='text'
+                  name='name'
+                  placeholder='Full Name'
+                  required
+                />
+                <Input
+                  type='text'
+                  name='subject'
+                  placeholder='Subject'
+                  required
+                />
+                <Textarea
+                  name='message'
+                  placeholder='Your Message Here'
+                  required
+                />
                 <SubmitButton type='submit'>{submitButtonText}</SubmitButton>
               </Form>
             </TextContent>
