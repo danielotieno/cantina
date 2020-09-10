@@ -56,8 +56,6 @@ export default ({
   formMethod = 'POST',
   textOnLeft = true,
 }) => {
-  // The textOnLeft boolean prop can be used to display either the text on left or right side of the image.
-
   return (
     <>
       <Header />
@@ -71,10 +69,14 @@ export default ({
               {subheading && <Subheading>{subheading}</Subheading>}
               <Heading>{heading}</Heading>
               {description && <Description>{description}</Description>}
-              <Form action={formAction} method={formMethod}>
+              <Form
+                action={formAction}
+                method={formMethod}
+                target='_blank'
+                id='clear-input'>
                 <Input
                   type='email'
-                  name='email'
+                  name='_replyto'
                   placeholder='Your Email Address'
                   required
                 />
