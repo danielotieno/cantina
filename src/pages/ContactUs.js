@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import tw from 'twin.macro';
 import styled from 'styled-components';
 import { css } from 'styled-components/macro'; //eslint-disable-line
@@ -69,11 +70,17 @@ export default ({
               {subheading && <Subheading>{subheading}</Subheading>}
               <Heading>{heading}</Heading>
               {description && <Description>{description}</Description>}
-              <Form
-                action={formAction}
-                method={formMethod}
-                target='_blank'
-                id='clear-input'>
+              <Form action={formAction} method={formMethod}>
+                <Input
+                  type='hidden'
+                  name='_subject'
+                  value="New Message for Dave's Cantina"
+                />
+                <Input
+                  type='hidden'
+                  name='_next'
+                  value={<Link to='/thank-you'></Link>}
+                />
                 <Input
                   type='email'
                   name='_replyto'

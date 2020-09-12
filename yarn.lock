@@ -9048,6 +9048,13 @@ react-external-link@^1.1.1:
   resolved "https://registry.yarnpkg.com/react-external-link/-/react-external-link-1.1.1.tgz#1caaa0f359d4a04b3052d98b67410c7877fe2f3d"
   integrity sha512-e2WnTWkg81cuqxmDfjOalliAE20+Y/uD+lserN4uuwkwu+ciGLB3BMz4m7GnXh2+TowIi4sLtCL7zr7aDnIaqA==
 
+react-icons@^3.11.0:
+  version "3.11.0"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-3.11.0.tgz#2ca2903dfab8268ca18ebd8cc2e879921ec3b254"
+  integrity sha512-JRgiI/vdF6uyBgyZhVyYJUZAop95Sy4XDe/jmT3R/bKliFWpO/uZBwvSjWEdxwzec7SYbEPNPck0Kff2tUGM2Q==
+  dependencies:
+    camelcase "^5.0.0"
+
 react-instagram-embed@^1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/react-instagram-embed/-/react-instagram-embed-1.5.0.tgz#88b0dc6d7baa50e8d703aca01b79cd981beff5b2"
