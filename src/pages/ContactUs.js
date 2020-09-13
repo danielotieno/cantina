@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import tw from 'twin.macro';
 import styled from 'styled-components';
 import { css } from 'styled-components/macro'; //eslint-disable-line
@@ -76,10 +75,10 @@ export default ({
                   name='_subject'
                   value="New Message for Dave's Cantina"
                 />
-                <Input
+                <input
                   type='hidden'
                   name='_next'
-                  value={<Link to='/thank-you'></Link>}
+                  value='https://www.davescantina.com/thank-you'
                 />
                 <Input
                   type='email'

@@ -1,12 +1,14 @@
 import React from 'react';
-import { FaHome } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import tw from 'twin.macro';
 import styled from 'styled-components';
+import ThanksBg from 'images/bg-1.jpg';
+
 import { css } from 'styled-components/macro'; //eslint-disable-line
 
 const Container = styled.div`
   ${tw`relative -mx-8 -mt-8 bg-center bg-cover h-screen min-h-144`}
-  background-image: url("https://images.unsplash.com/photo-1536300007881-7e482242baa5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=80");
+  background-image: url(${ThanksBg});
 `;
 
 const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-black opacity-75`;
@@ -35,7 +37,7 @@ export default () => {
             We will reply back as soon as possible.
           </Heading>
           <PrimaryAction>
-            <FaHome /> Back Home
+            <Link to='/'>Back Home</Link>
           </PrimaryAction>
         </Content>
       </HeroContainer>
