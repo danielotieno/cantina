@@ -100,7 +100,7 @@ export default ({
   const navLinks = [
     <NavLinks key={1}>
       <NavLink>
-        <Link to='/about-us'>About</Link>
+        <Link to='/about-us'>About Us</Link>
       </NavLink>
       <NavLink>
         <Link to='/tours'>Tours</Link>

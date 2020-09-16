@@ -46,7 +46,7 @@ export default () => {
               <Link to='/'>Home</Link>
             </FooterLink>
             <FooterLink>
-              <Link to='/about-us'>About</Link>
+              <Link to='/about-us'>About Us</Link>
             </FooterLink>
             <FooterLink>
               <Link to='/tours'>Tours</Link>

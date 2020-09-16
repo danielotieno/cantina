@@ -69,7 +69,7 @@ export default ({
     },
     {
       imageSrc: `${Daniel}`,
-      position: 'Web Developer',
+      position: 'Team Lead',
       name: 'Daniel Otieno',
       links: [
         {
