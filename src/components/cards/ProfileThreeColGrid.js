@@ -10,11 +10,10 @@ import { ReactComponent as InstagramIcon } from 'images/insta.svg';
 import { ReactComponent as FacebookIcon } from 'images/facebook-icon.svg';
 import Daniel from 'images/dp.jpg';
 import Maguire from 'images/mag.jpeg';
-import Fred from 'images/fred.jpg';
 
 const HeadingContainer = tw.div``;
 const Heading = tw(SectionHeading)``;
-const Description = tw(SectionDescription)`mx-auto text-center`;
+const Description = tw(SectionDescription)`mx-auto text-center italic`;
 
 const Cards = tw.div`flex flex-wrap flex-row justify-center sm:max-w-2xl lg:max-w-5xl mx-auto`;
 const Card = tw.div`mt-24 w-full sm:w-1/2 lg:w-1/3 flex flex-col items-center`;
@@ -47,7 +46,7 @@ const CardLinks = styled.div`
 
 export default ({
   heading = 'Meet The Team',
-  description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  description = 'Coming together is a beginning, staying together is progress, and working together is success. – Henry Ford ',
   cards = [
     {
       imageSrc: `${Maguire}`,
@@ -55,11 +54,11 @@ export default ({
       name: 'David Maguire',
       links: [
         {
-          url: 'https://twitter.com',
+          url: 'https://www.facebook.com/david.maguire.37',
           icon: FacebookIcon,
         },
         {
-          url: 'https://linkedin.com',
+          url: 'https://www.instagram.com/davidmaguireirl/?hl=en',
           icon: InstagramIcon,
         },
         {
@@ -74,34 +73,15 @@ export default ({
       name: 'Daniel Otieno',
       links: [
         {
-          url: 'https://twitter.com',
+          url: 'https://www.facebook.com/daniel.otieno.ke/',
           icon: FacebookIcon,
         },
         {
-          url: 'https://linkedin.com',
+          url: 'https://www.instagram.com/danielotienoke/?hl=en',
           icon: InstagramIcon,
         },
         {
-          url: 'https://github.com',
-          icon: TwitterIcon,
-        },
-      ],
-    },
-    {
-      imageSrc: `${Fred}`,
-      position: 'Videographer',
-      name: 'Fredrick Onyango',
-      links: [
-        {
-          url: 'https://twitter.com',
-          icon: FacebookIcon,
-        },
-        {
-          url: 'https://linkedin.com',
-          icon: InstagramIcon,
-        },
-        {
-          url: 'https://github.com',
+          url: 'https://twitter.com/danielotienoke',
           icon: TwitterIcon,
         },
       ],
