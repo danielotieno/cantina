@@ -74,7 +74,9 @@ export default () => {
             <br />
             For Best Food Tours
           </Heading>
-          <PrimaryAction>Explore More</PrimaryAction>
+          <PrimaryAction>
+            <Link to='/tours'>Explore Tours</Link>
+          </PrimaryAction>
         </Content>
       </HeroContainer>
     </Container>
