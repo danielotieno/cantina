@@ -3,7 +3,7 @@ import Typical from 'react-typical';
 import tw from 'twin.macro';
 import { css } from 'styled-components/macro'; //eslint-disable-line
 import AnimationRevealPage from 'helpers/AnimationRevealPage.js';
-import Hero from 'components/hero/TwoColumnWithVideo.js';
+import Hero from 'components/hero/HeroBack.js';
 
 export default () => {
   const HighlightedText = tw.span`bg-primary-500 text-gray-100 px-4 transform -skew-x-6 inline-block`;

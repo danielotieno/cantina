@@ -70,7 +70,7 @@ export default ({
         <Link to='/'>Home</Link>
       </NavLink>
       <NavLink>
-        <Link to='/about-us'>About Us</Link>
+        <Link to='/about-us'>About</Link>
       </NavLink>
       <NavLink>
         <Link to='/tours'>Tours</Link>

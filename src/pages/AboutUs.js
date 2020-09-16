@@ -15,11 +15,7 @@ export default () => {
     <>
       <AnimationRevealPage>
         <Header />
-        <MainFeature1
-          heading='About us'
-          buttonRounded={false}
-          imageSrc={AtImg}
-        />
+        <MainFeature1 heading='About' buttonRounded={false} imageSrc={AtImg} />
         <MainFeature1
           heading='Our Mission'
           buttonRounded={false}
