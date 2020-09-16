@@ -9,7 +9,6 @@ import bgImage from '../../images/beef.jpg';
 import Header, {
   NavLink,
   NavLinks,
-  PrimaryLink as PrimaryLinkBase,
   LogoLink,
   NavToggle,
   DesktopNavLinks,
@@ -25,7 +24,6 @@ const StyledHeader = styled(Header)`
   }
 `;
 
-const PrimaryLink = tw(PrimaryLinkBase)`rounded-full`;
 const Container = styled.div`
   ${tw`relative -mx-8 -mt-8 bg-center bg-cover h-screen min-h-144`}
   background-image: url(${bgImage});
