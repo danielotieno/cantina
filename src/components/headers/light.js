@@ -37,7 +37,7 @@ export const PrimaryLink = tw(NavLink)`
 export const ContactLink = tw(NavLink)`
   lg:mx-0
   px-8 py-3 rounded bg-orange-900 text-gray-100
-  hocus:bg-orange-800 hocus:text-gray-200 focus:shadow-outline
+  hocus:bg-orange-700 hocus:text-gray-200 focus:shadow-outline
   border-b-0
 `;
 
