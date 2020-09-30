@@ -9,7 +9,6 @@ import AboutUs from 'pages/AboutUs';
 import Tours from 'pages/Tours';
 import Food from 'pages/Food';
 import ContactUs from 'pages/ContactUs';
-import ThankYou from 'components/hero/ThankYou';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -25,7 +24,6 @@ export default function App() {
           <Route exact path='/tours' component={Tours} />
           <Route exact path='/food' component={Food} />
           <Route exact path='/contact-us' component={ContactUs} />
-          <Route exact path='/thank-you' component={ThankYou} />
         </Switch>
       </Router>
     </AnimationRevealPage>
