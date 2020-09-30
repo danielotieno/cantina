@@ -25,15 +25,6 @@ export default () => {
     {
       url: 'https://www.instagram.com/p/B8Tw_1JHLT7/',
     },
-    {
-      url: 'https://www.instagram.com/p/B9FONvLnKjI/',
-    },
-    {
-      url: 'https://www.instagram.com/p/B7t_8UjHGLh/',
-    },
-    {
-      url: 'https://www.instagram.com/p/B9U-5qpnTsI/',
-    },
   ];
   return (
     <Container>
