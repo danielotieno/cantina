@@ -9,7 +9,7 @@ import TabGrid from 'components/cards/TabCardGrid.js';
 import MiniCenteredFooter from 'components/footers/MiniCenteredFooter';
 
 export default () => {
-  const HighlightedText = tw.span`bg-primary-500 text-gray-100 px-4 transform -skew-x-12 inline-block`;
+  const HighlightedText = tw.span`bg-orange-900 text-gray-100 px-4 transform -skew-x-12 inline-block`;
   return (
     <>
       <AnimationRevealPage>
@@ -17,7 +17,7 @@ export default () => {
         <TabGrid
           heading={
             <>
-              Checkout our <HighlightedText>Videos.</HighlightedText>
+              How to cook <HighlightedText>Videos</HighlightedText>
             </>
           }
         />
