@@ -30,7 +30,7 @@ export default () => {
         />
         <Features
           heading='Our Vision'
-          description='To give our viewers the most compelling food, travel and life tour experience possible.'
+          description='To give our viewers the most compelling food, travel and life tour experience’s as possible.'
           linkText=''
         />
         <TeamCardGrid />
