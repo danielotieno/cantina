@@ -50,7 +50,7 @@ export default ({
   cards = [
     {
       imageSrc: `${Maguire}`,
-      position: 'Founder',
+      position: 'Managing Director',
       name: 'David Maguire',
       links: [
         {
@@ -69,7 +69,7 @@ export default ({
     },
     {
       imageSrc: `${Daniel}`,
-      position: 'Team Lead',
+      position: 'Operation Director',
       name: 'Daniel Otieno',
       links: [
         {
