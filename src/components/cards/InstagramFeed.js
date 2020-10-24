@@ -17,10 +17,10 @@ const PostsContainer = tw.div`inline-block px-2 items-center`;
 export default () => {
   const posts = [
     {
-      url: 'https://www.instagram.com/p/CC_7UAOnKI1/',
+      url: 'https://www.instagram.com/p/CGr6AbqHpVz/',
     },
     {
-      url: 'https://www.instagram.com/p/B_qJVdMH739/',
+      url: 'https://www.instagram.com/p/CGryPc0nbaA/',
     },
     {
       url: 'https://www.instagram.com/p/B8Tw_1JHLT7/',
