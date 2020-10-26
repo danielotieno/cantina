@@ -8,7 +8,7 @@ import { SectionDescription } from 'components/misc/Typography';
 import { ReactComponent as TwitterIcon } from 'images/twitter-icon.svg';
 import { ReactComponent as InstagramIcon } from 'images/insta.svg';
 import { ReactComponent as FacebookIcon } from 'images/facebook-icon.svg';
-import Daniel from 'images/dp.jpg';
+import Daniel from 'images/pp.jpg';
 import Maguire from 'images/mag.jpeg';
 
 const HeadingContainer = tw.div``;
