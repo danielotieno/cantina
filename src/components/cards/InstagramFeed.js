@@ -12,12 +12,15 @@ const ThreeColumnContainer = styled.div`
   ${tw`flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-lg mx-auto py-16 md:py-10`}
 `;
 
-const PostsContainer = tw.div`inline-block px-2 items-center`;
+const PostsContainer = tw.div`inline-block px-2 items-center rounded shadow-lg border-b border-gray-700`;
 
 export default () => {
   const posts = [
     {
       url: 'https://www.instagram.com/p/CGr6AbqHpVz/',
+    },
+    {
+      url: 'https://www.instagram.com/p/CGryPc0nbaA/',
     },
     {
       url: 'https://www.instagram.com/p/CGryPc0nbaA/',
