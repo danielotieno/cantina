@@ -22,9 +22,6 @@ export default () => {
     {
       url: 'https://www.instagram.com/p/CGryPc0nbaA/',
     },
-    {
-      url: 'https://www.instagram.com/p/B8Tw_1JHLT7/',
-    },
   ];
   return (
     <Container>
@@ -34,6 +31,7 @@ export default () => {
           <PostsContainer key={index}>
             <InstagramEmbed
               url={post.url}
+              clientAccessToken='689793628606664|8715ca968216b9239eab5d1437420e83'
               maxWidth={320}
               hideCaption={true}
               containerTagName='div'

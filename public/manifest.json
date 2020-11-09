@@ -1,10 +1,10 @@
 {
   "short_name": "Dave's Cantina App",
-  "name": "Dave's Cantina Website",
+  "name": "Dave's Cantina website. The home of street food, food tour, travelling and fun.",
   "icons": [
     {
       "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16 72x72",
+      "sizes": "72x72 64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
