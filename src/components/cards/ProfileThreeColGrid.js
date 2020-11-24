@@ -9,7 +9,7 @@ import { ReactComponent as TwitterIcon } from 'images/twitter-icon.svg';
 import { ReactComponent as InstagramIcon } from 'images/insta.svg';
 import { ReactComponent as FacebookIcon } from 'images/facebook-icon.svg';
 import Daniel from 'images/pp.jpg';
-import Maguire from 'images/mag.jpeg';
+import Maguire from 'images/maguire.jpg';
 
 const HeadingContainer = tw.div``;
 const Heading = tw(SectionHeading)``;
@@ -50,7 +50,7 @@ export default ({
   cards = [
     {
       imageSrc: `${Maguire}`,
-      position: 'Managing Director',
+      position: 'Founder',
       name: 'David Maguire',
       links: [
         {
