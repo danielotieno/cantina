@@ -118,7 +118,7 @@ export default ({
     ],
     Main: getRandomCards(),
     Soup: getRandomCards(),
-    Desserts: getRandomCards(),
+    Pizza: getRandomCards(),
   },
 }) => {
   /*
