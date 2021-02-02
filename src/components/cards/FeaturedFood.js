@@ -10,6 +10,7 @@ import { PrimaryButton as PrimaryButtonBase } from 'components/misc/Buttons.js';
 import { Container, ContentWithPaddingXl } from 'components/misc/Layouts.js';
 import { ReactComponent as SvgDecoratorBlob1 } from 'images/svg-decorator-blob-5.svg';
 import { ReactComponent as SvgDecoratorBlob2 } from 'images/svg-decorator-blob-7.svg';
+import PizzaDough from 'images/pizza-dough.jpeg';
 
 const Heading = tw(SectionHeading)``;
 
@@ -28,59 +29,53 @@ const CardImageContainer = styled.div`
     css`
       background-image: url('${props.imageSrc}');
     `}
-  ${tw`h-56 xl:h-64 bg-center bg-cover relative rounded-t`}
+  ${tw`relative h-56 bg-center bg-cover rounded-t xl:h-64`}
 `;
 
 const CardHoverOverlay = styled(motion.div)`
   background-color: rgba(255, 255, 255, 0.5);
-  ${tw`absolute inset-0 flex justify-center items-center`}
+  ${tw`absolute inset-0 flex items-center justify-center`}
 `;
 const CardButton = tw(PrimaryButtonBase)`text-sm`;
 
 const CardText = tw.div`p-4 text-gray-900`;
 const CardTitle = tw.h5`text-lg font-semibold group-hover:text-primary-500`;
-const CardContent = tw.p`mt-1 text-sm font-medium text-gray-600`;
 
 const ButtonContainer = tw.div`flex justify-center mt-6`;
 
 const AllButton = tw.button`inline-block rounded justify-center items-center font-bold  px-8 lg:px-10 py-3 rounded bg-orange-600 text-gray-100 hocus:bg-orange-700 focus:shadow-outline focus:outline-none transition duration-300 `;
 
 const DecoratorBlob1 = styled(SvgDecoratorBlob1)`
-  ${tw`pointer-events-none -z-20 absolute right-0 top-0 h-64 w-64 opacity-15 transform translate-x-2/3 -translate-y-12 text-pink-400`}
+  ${tw`absolute top-0 right-0 w-64 h-64 text-pink-400 transform -translate-y-12 pointer-events-none -z-20 opacity-15 translate-x-2/3`}
 `;
 const DecoratorBlob2 = styled(SvgDecoratorBlob2)`
-  ${tw`pointer-events-none -z-20 absolute left-0 bottom-0 h-80 w-80 opacity-15 transform -translate-x-2/3 text-primary-500`}
+  ${tw`absolute bottom-0 left-0 transform pointer-events-none -z-20 h-80 w-80 opacity-15 -translate-x-2/3 text-primary-500`}
 `;
 
 export default () => {
   const food = [
     {
-      imageSrc:
-        'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80',
-      title: 'Veg Mixer',
-      content: 'Tomato Salad & Carrot',
-      url: 'https://youtu.be/zdJMReSUIos',
+      imageSrc: PizzaDough,
+      title: 'Pizza Dough',
+      url: 'https://youtu.be/5ay-XRxkdE0',
     },
     {
       imageSrc:
         'https://images.unsplash.com/photo-1432139555190-58524dae6a55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80',
       title: 'Macaroni',
-      content: 'Cheese Pizza',
-      url: 'https://youtu.be/zdJMReSUIos',
+      url: 'https://youtu.be/5ay-XRxkdE0',
     },
     {
       imageSrc:
         'https://images.unsplash.com/photo-1476224203421-9ac39bcb3327??ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80',
-      title: 'Nelli',
-      content: 'Hamburger & Fries',
-      url: 'https://youtu.be/zdJMReSUIos',
+      title: 'Hamburger & Fries',
+      url: 'https://youtu.be/5ay-XRxkdE0',
     },
     {
       imageSrc:
         'https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80',
-      title: 'Jalapeno Poppers',
-      content: 'Crispy Soyabeans',
-      url: 'https://youtu.be/zdJMReSUIos',
+      title: 'Crispy Soyabeans',
+      url: 'https://youtu.be/5ay-XRxkdE0',
     },
   ];
   return (
@@ -127,7 +122,6 @@ export default () => {
                   </CardImageContainer>
                   <CardText>
                     <CardTitle>{card.title}</CardTitle>
-                    <CardContent>{card.content}</CardContent>
                   </CardText>
                 </Card>
               </ExternalLink>
