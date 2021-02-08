@@ -11,6 +11,7 @@ import { Container, ContentWithPaddingXl } from 'components/misc/Layouts.js';
 import { ReactComponent as SvgDecoratorBlob1 } from 'images/svg-decorator-blob-5.svg';
 import { ReactComponent as SvgDecoratorBlob2 } from 'images/svg-decorator-blob-7.svg';
 import PizzaDough from 'images/pizza-dough.jpeg';
+import SmokedChicken from 'images/chick.jpg';
 
 const Heading = tw(SectionHeading)``;
 
@@ -60,10 +61,9 @@ export default () => {
       url: 'https://youtu.be/5ay-XRxkdE0',
     },
     {
-      imageSrc:
-        'https://images.unsplash.com/photo-1432139555190-58524dae6a55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80',
-      title: 'Macaroni',
-      url: 'https://youtu.be/5ay-XRxkdE0',
+      imageSrc: SmokedChicken,
+      title: 'Smoked Chicken ',
+      url: 'https://youtu.be/b2A7np1vTL8',
     },
     {
       imageSrc:
