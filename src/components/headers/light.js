@@ -37,7 +37,7 @@ export const PrimaryLink = tw(NavLink)`
 export const ContactLink = tw(NavLink)`
   lg:mx-0
   px-8 py-3 rounded bg-orange-900 text-gray-100
-  hocus:bg-orange-700 hocus:text-gray-200 focus:shadow-outline
+  hocus:text-gray-200 focus:shadow-outline
   border-b-0
 `;
 
@@ -54,7 +54,7 @@ export const NavToggle = tw.button`
   lg:hidden z-20 focus:outline-none hocus:text-primary-500 transition duration-300
 `;
 export const MobileNavLinks = motion.custom(styled.div`
-  ${tw`lg:hidden z-10 fixed top-0 inset-x-0 mx-4 my-6 p-8 border text-center rounded-lg text-gray-900 bg-white`}
+  ${tw`fixed inset-x-0 top-0 z-10 p-8 mx-4 my-6 text-center text-gray-900 bg-white border rounded-lg lg:hidden`}
   ${NavLinks} {
     ${tw`flex flex-col items-center`}
   }
