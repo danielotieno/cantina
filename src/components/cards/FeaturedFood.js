@@ -12,6 +12,7 @@ import { ReactComponent as SvgDecoratorBlob1 } from 'images/svg-decorator-blob-5
 import { ReactComponent as SvgDecoratorBlob2 } from 'images/svg-decorator-blob-7.svg';
 import PizzaDough from 'images/pizza-dough.jpeg';
 import SmokedChicken from 'images/chick.jpg';
+import ChocolateBrownies from 'images/choco.jpg';
 
 const Heading = tw(SectionHeading)``;
 
@@ -62,14 +63,13 @@ export default () => {
     },
     {
       imageSrc: SmokedChicken,
-      title: 'Smoked Chicken ',
+      title: 'Smoked Chicken',
       url: 'https://youtu.be/b2A7np1vTL8',
     },
     {
-      imageSrc:
-        'https://images.unsplash.com/photo-1476224203421-9ac39bcb3327??ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80',
-      title: 'Hamburger & Fries',
-      url: 'https://youtu.be/5ay-XRxkdE0',
+      imageSrc: ChocolateBrownies,
+      title: 'Chocolate Brownies',
+      url: 'https://youtu.be/KH4FvGqIfy8',
     },
     {
       imageSrc:
