@@ -86,7 +86,7 @@ export default () => {
           </Heading>
           <YouSub>
             <ExternalLink href='https://bit.ly/daves-cantina'>
-              <img src={Subscribe} />
+              <img src={Subscribe} alt='YouTube Subscribe Image' />
             </ExternalLink>
           </YouSub>
         </Content>
