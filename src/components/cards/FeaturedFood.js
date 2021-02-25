@@ -16,7 +16,7 @@ import ChocolateBrownies from 'images/choco.jpg';
 
 const Heading = tw(SectionHeading)``;
 
-const CardContainer = tw.div`mt-10 w-full inline-block sm:w-1/2 md:w-1/3 lg:w-1/4 sm:pr-10 md:pr-6 lg:pr-12`;
+const CardContainer = tw.div`mt-10 w-full inline-block sm:w-1/2 md:w-1/3 sm:pr-10 md:pr-6 lg:pr-12`;
 
 const TabContent = tw(
   motion.div,
@@ -70,12 +70,6 @@ export default () => {
       imageSrc: ChocolateBrownies,
       title: 'Chocolate Brownies',
       url: 'https://youtu.be/KH4FvGqIfy8',
-    },
-    {
-      imageSrc:
-        'https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80',
-      title: 'Crispy Soyabeans',
-      url: 'https://youtu.be/5ay-XRxkdE0',
     },
   ];
   return (

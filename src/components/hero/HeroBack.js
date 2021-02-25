@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { ExternalLink } from 'react-external-link';
+
 import { css } from 'styled-components/macro'; //eslint-disable-line
 import tw from 'twin.macro';
 import styled from 'styled-components';
 
 import bgImage from '../../images/beef.jpg';
+import Subscribe from '../../images/yout.png';
 
 import Header, {
   NavLink,
@@ -18,7 +21,7 @@ import Header, {
 const PrimaryLink = tw(PrimaryLinkBase)`rounded-full`;
 
 const StyledHeader = styled(Header)`
-  ${tw`pt-8 max-w-none w-full`}
+  ${tw`w-full pt-8 max-w-none`}
   ${DesktopNavLinks} ${NavLink}, ${LogoLink} {
     ${tw`text-gray-100 hover:border-gray-300 hover:text-gray-300`}
   }
@@ -28,7 +31,7 @@ const StyledHeader = styled(Header)`
 `;
 
 const Container = styled.div`
-  ${tw`relative -mx-8 -mt-8 bg-center bg-cover h-screen min-h-144`}
+  ${tw`relative h-screen -mx-8 -mt-8 bg-center bg-cover min-h-144`}
   background-image: url(${bgImage});
 `;
 
@@ -38,13 +41,15 @@ const HeroContainer = tw.div`z-20 relative px-6 sm:px-8 mx-auto h-full flex flex
 const Content = tw.div`px-4 flex flex-1 flex-col justify-center items-center`;
 
 const Heading = styled.h1`
-  ${tw`text-3xl text-center sm:text-4xl lg:text-5xl xl:text-6xl font-black text-gray-100 leading-snug -mt-24 sm:mt-0`}
+  ${tw`-mt-24 text-3xl font-black leading-snug text-center text-gray-100 sm:text-4xl lg:text-5xl xl:text-6xl sm:mt-0`}
   span {
     ${tw`inline-block mt-2`}
   }
 `;
 
 const PrimaryAction = tw.button`rounded-full px-8 py-3 mt-10 text-sm sm:text-base sm:mt-16 sm:px-8 sm:py-4 bg-gray-100 font-bold shadow transition duration-300 bg-orange-600 text-gray-100 hocus:bg-orange-700 hocus:text-gray-200 focus:outline-none focus:shadow-outline`;
+
+const YouSub = tw.div`h-40 w-40 mt-8`;
 
 export default () => {
   const navLinks = [
@@ -55,11 +60,11 @@ export default () => {
       <NavLink>
         <Link to='/about-us'>About Us</Link>
       </NavLink>
-      <NavLink>
+      {/* <NavLink>
         <Link to='/tours'>Tours</Link>
-      </NavLink>
+      </NavLink> */}
       <NavLink>
-        <Link to='/food'>Food</Link>
+        <Link to='/food-videos'>Videos</Link>
       </NavLink>
     </NavLinks>,
     <NavLinks key={2}>
@@ -81,9 +86,14 @@ export default () => {
             <br />
             For Best Food Tours
           </Heading>
-          <PrimaryAction>
+          {/* <PrimaryAction>
             <Link to='/tours'>Explore Tours</Link>
-          </PrimaryAction>
+          </PrimaryAction> */}
+          <YouSub>
+            <ExternalLink href='https://bit.ly/daves-cantina'>
+              <img src={Subscribe} />
+            </ExternalLink>
+          </YouSub>
         </Content>
       </HeroContainer>
     </Container>

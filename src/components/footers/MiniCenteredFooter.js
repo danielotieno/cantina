@@ -25,7 +25,7 @@ const FooterLink = tw.a`border-b-2 border-transparent hocus:text-gray-300 hocus:
 
 const SocialLinksContainer = tw.div`mt-10`;
 const SocialLink = styled.a`
-  ${tw`cursor-pointer inline-block p-2 rounded-full bg-gray-100 text-gray-900 hover:bg-gray-500 transition duration-300 mx-4`}
+  ${tw`inline-block p-2 mx-4 text-gray-900 transition duration-300 bg-gray-100 rounded-full cursor-pointer hover:bg-gray-500`}
   svg {
     ${tw`w-5 h-5`}
   }
@@ -47,11 +47,11 @@ export default () => {
             <FooterLink>
               <Link to='/about-us'>About</Link>
             </FooterLink>
-            <FooterLink>
+            {/* <FooterLink>
               <Link to='/tours'>Tours</Link>
-            </FooterLink>
+            </FooterLink> */}
             <FooterLink>
-              <Link to='/food'>Food</Link>
+              <Link to='/food-videos'>Videos</Link>
             </FooterLink>
             <FooterLink>
               <Link to='/contact-us'>Contact Us</Link>

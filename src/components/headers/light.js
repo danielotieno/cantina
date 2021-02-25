@@ -77,13 +77,13 @@ export default ({
         <Link to='/'>Home</Link>
       </NavLink>
       <NavLink>
-        <Link to='/about-us'>About</Link>
+        <Link to='/about-us'>About Us</Link>
       </NavLink>
-      <NavLink>
+      {/* <NavLink>
         <Link to='/tours'>Tours</Link>
-      </NavLink>
+      </NavLink> */}
       <NavLink>
-        <Link to='/food'>Food</Link>
+        <Link to='/food-videos'>Videos</Link>
       </NavLink>
       <NavLink>
         <Link to='/contact-us'>Contact Us</Link>

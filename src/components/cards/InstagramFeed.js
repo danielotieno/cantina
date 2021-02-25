@@ -9,7 +9,7 @@ const Heading = tw(SectionHeading)`pb-5`;
 // const Content = tw.div`max-w-screen-xl mx-auto`;
 
 const ThreeColumnContainer = styled.div`
-  ${tw`flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-lg mx-auto py-16 md:py-10`}
+  ${tw`flex flex-col flex-wrap items-center max-w-screen-lg py-16 mx-auto md:items-stretch md:flex-row md:justify-center md:py-10`}
 `;
 
 const PostsContainer = tw.div`inline-block px-2 items-center rounded shadow-lg border-b border-gray-700`;
@@ -17,13 +17,13 @@ const PostsContainer = tw.div`inline-block px-2 items-center rounded shadow-lg b
 export default () => {
   const posts = [
     {
-      url: 'https://www.instagram.com/p/CGr6AbqHpVz/',
+      url: 'https://www.instagram.com/p/CK3KvUPD-GR/',
     },
     {
-      url: 'https://www.instagram.com/p/CGryPc0nbaA/',
+      url: 'https://www.instagram.com/p/CLOm7u1j4B3/',
     },
     {
-      url: 'https://www.instagram.com/p/CGryPc0nbaA/',
+      url: 'https://www.instagram.com/p/CLfQLgIDZk_/',
     },
   ];
   return (
