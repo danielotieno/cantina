@@ -47,8 +47,6 @@ const Heading = styled.h1`
   }
 `;
 
-const PrimaryAction = tw.button`rounded-full px-8 py-3 mt-10 text-sm sm:text-base sm:mt-16 sm:px-8 sm:py-4 bg-gray-100 font-bold shadow transition duration-300 bg-orange-600 text-gray-100 hocus:bg-orange-700 hocus:text-gray-200 focus:outline-none focus:shadow-outline`;
-
 const YouSub = tw.div`h-40 w-40 mt-8`;
 
 export default () => {
@@ -86,9 +84,6 @@ export default () => {
             <br />
             For Best Food Tours
           </Heading>
-          {/* <PrimaryAction>
-            <Link to='/tours'>Explore Tours</Link>
-          </PrimaryAction> */}
           <YouSub>
             <ExternalLink href='https://bit.ly/daves-cantina'>
               <img src={Subscribe} />
