@@ -13,6 +13,7 @@ import PizzaDough from 'images/pizza-dough.jpeg';
 import SmokedChicken from 'images/chick.jpg';
 import ChocolateBrownies from 'images/choco.jpg';
 import ChickenBalls from 'images/chicken-balls.jpg';
+import Jd from 'images/jd.jpeg';
 
 const HeaderRow = tw.div`flex justify-between items-center flex-col xl:flex-row`;
 const Header = tw(SectionHeading)``;
@@ -73,6 +74,11 @@ export default ({ heading }) => {
       imageSrc: ChickenBalls,
       title: 'Chicken Balls',
       url: 'https://youtu.be/wHuEQ_sMrow',
+    },
+    {
+      imageSrc: Jd,
+      title: "Jack Daniel's Crispy Chicken Wings",
+      url: 'https://youtu.be/yLdRClgMltI',
     },
   ];
 

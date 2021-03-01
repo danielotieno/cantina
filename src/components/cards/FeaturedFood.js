@@ -13,6 +13,8 @@ import { ReactComponent as SvgDecoratorBlob2 } from 'images/svg-decorator-blob-7
 import PizzaDough from 'images/pizza-dough.jpeg';
 import SmokedChicken from 'images/chick.jpg';
 import ChocolateBrownies from 'images/choco.jpg';
+import Jd from 'images/jd.jpeg';
+import ChickenBalls from 'images/chicken-balls.jpg';
 
 const Heading = tw(SectionHeading)``;
 
@@ -57,6 +59,11 @@ const DecoratorBlob2 = styled(SvgDecoratorBlob2)`
 export default () => {
   const food = [
     {
+      imageSrc: ChickenBalls,
+      title: 'Chicken Balls',
+      url: 'https://youtu.be/wHuEQ_sMrow',
+    },
+    {
       imageSrc: PizzaDough,
       title: 'Pizza Dough',
       url: 'https://youtu.be/5ay-XRxkdE0',
@@ -70,6 +77,11 @@ export default () => {
       imageSrc: ChocolateBrownies,
       title: 'Chocolate Brownies',
       url: 'https://youtu.be/KH4FvGqIfy8',
+    },
+    {
+      imageSrc: Jd,
+      title: "Jack Daniel's Crispy Chicken Wings",
+      url: 'https://youtu.be/yLdRClgMltI',
     },
   ];
   return (
