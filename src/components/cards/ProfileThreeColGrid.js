@@ -22,24 +22,24 @@ const CardImage = styled.div`
     css`
       background-image: url('${props.imageSrc}');
     `}
-  ${tw`w-64 h-64 bg-contain bg-center rounded`}
+  ${tw`w-64 h-64 bg-center bg-contain rounded `}
 `;
 const CardContent = styled.div`
   ${tw`flex flex-col items-center mt-6`}
   .position {
-    ${tw`uppercase font-bold tracking-widest text-xs text-primary-500`}
+    ${tw`text-xs font-bold tracking-widest uppercase text-primary-500`}
   }
   .name {
     ${tw`mt-1 text-xl font-medium text-gray-900`}
-  9
+  }
 `;
 
 const CardLinks = styled.div`
-  ${tw`mt-6 flex`}
+  ${tw`flex mt-6`}
   .link {
-    ${tw`mr-8 last:mr-0 text-gray-400 hocus:text-primary-500 transition duration-300`}
+    ${tw`mr-8 text-gray-400 transition duration-300 last:mr-0 hocus:text-primary-500`}
     .icon {
-      ${tw`fill-current w-6 h-6`}
+      ${tw`w-6 h-6 fill-current`}
     }
   }
 `;

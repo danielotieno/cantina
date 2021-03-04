@@ -12,7 +12,7 @@ const ThreeColumnContainer = styled.div`
   ${tw`flex flex-col flex-wrap items-center max-w-screen-lg py-16 mx-auto md:items-stretch md:flex-row md:justify-center md:py-10`}
 `;
 
-const PostsContainer = tw.div`inline-block px-2 items-center rounded shadow-lg border-b border-gray-700`;
+const PostsContainer = tw.div`inline-block px-2 mt-4 items-center rounded shadow-lg border-b border-gray-700`;
 
 export default () => {
   const posts = [
@@ -24,6 +24,15 @@ export default () => {
     },
     {
       url: 'https://www.instagram.com/p/CLfQLgIDZk_/',
+    },
+    {
+      url: 'https://www.instagram.com/p/CL_9CbSj9qO/',
+    },
+    {
+      url: 'https://www.instagram.com/p/CL5DCdjD1zI/',
+    },
+    {
+      url: 'https://www.instagram.com/p/CH12rirDe0S/',
     },
   ];
   return (
