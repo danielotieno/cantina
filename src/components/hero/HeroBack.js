@@ -80,7 +80,7 @@ export default () => {
         <StyledHeader links={navLinks} />
         <Content>
           <Heading>
-            Welcome to Dave's Cantina.
+            Dave's Cantina.
             <br />
             For Best Food Tours
           </Heading>
