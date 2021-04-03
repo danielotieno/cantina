@@ -14,6 +14,7 @@ import SmokedChicken from 'images/chick.jpg';
 import ChocolateBrownies from 'images/choco.jpg';
 import ChickenBalls from 'images/chicken-balls.jpg';
 import Jd from 'images/jd.jpeg';
+import PorkRibs from 'images/pork-ribs.jpg';
 
 const HeaderRow = tw.div`flex justify-between items-center flex-col xl:flex-row`;
 const Header = tw(SectionHeading)``;
@@ -79,6 +80,11 @@ export default ({ heading }) => {
       imageSrc: Jd,
       title: "Jack Daniel's Crispy Chicken Wings",
       url: 'https://youtu.be/yLdRClgMltI',
+    },
+    {
+      imageSrc: PorkRibs,
+      title: 'BBQ Pork Ribs on the Big Green Egg',
+      url: 'https://youtu.be/_NymmPUJcE0',
     },
   ];
 
