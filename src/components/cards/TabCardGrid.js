@@ -16,6 +16,7 @@ import ChickenBalls from 'images/chicken-balls.jpg';
 import Jd from 'images/jd.jpeg';
 import PorkRibs from 'images/pork-ribs.jpg';
 import WhiteBread from 'images/White-Bread.jpg';
+import ChickenTikka from 'images/chicken-tikka.jpeg';
 
 const HeaderRow = tw.div`flex justify-between items-center flex-col xl:flex-row`;
 const Header = tw(SectionHeading)``;
@@ -86,6 +87,11 @@ export default ({ heading }) => {
       imageSrc: PorkRibs,
       title: 'BBQ Pork Ribs on the Big Green Egg',
       url: 'https://youtu.be/_NymmPUJcE0',
+    },
+    {
+      imageSrc: ChickenTikka,
+      title: 'Traditional Indian Chicken Tikka',
+      url: 'https://youtu.be/L_MZzf6b6Z0',
     },
     {
       imageSrc: WhiteBread,

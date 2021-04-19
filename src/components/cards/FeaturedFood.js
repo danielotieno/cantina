@@ -14,7 +14,7 @@ import PizzaDough from 'images/pizza-dough.jpeg';
 import SmokedChicken from 'images/chick.jpg';
 import ChocolateBrownies from 'images/choco.jpg';
 import Jd from 'images/jd.jpeg';
-import ChickenBalls from 'images/chicken-balls.jpg';
+import ChickenTikka from 'images/chicken-tikka.jpeg';
 import PorkRibs from 'images/pork-ribs.jpg';
 
 const Heading = tw(SectionHeading)``;
@@ -60,9 +60,9 @@ const DecoratorBlob2 = styled(SvgDecoratorBlob2)`
 export default () => {
   const food = [
     {
-      imageSrc: ChickenBalls,
-      title: 'Chicken Balls',
-      url: 'https://youtu.be/wHuEQ_sMrow',
+      imageSrc: ChickenTikka,
+      title: 'Traditional Indian Chicken Tikka',
+      url: 'https://youtu.be/L_MZzf6b6Z0',
     },
     {
       imageSrc: PizzaDough,
