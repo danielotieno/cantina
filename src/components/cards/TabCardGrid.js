@@ -15,6 +15,7 @@ import ChocolateBrownies from 'images/choco.jpg';
 import ChickenBalls from 'images/chicken-balls.jpg';
 import Jd from 'images/jd.jpeg';
 import PorkRibs from 'images/pork-ribs.jpg';
+import WhiteBread from 'images/White-Bread.jpg';
 
 const HeaderRow = tw.div`flex justify-between items-center flex-col xl:flex-row`;
 const Header = tw(SectionHeading)``;
@@ -85,6 +86,11 @@ export default ({ heading }) => {
       imageSrc: PorkRibs,
       title: 'BBQ Pork Ribs on the Big Green Egg',
       url: 'https://youtu.be/_NymmPUJcE0',
+    },
+    {
+      imageSrc: WhiteBread,
+      title: 'White Bread',
+      url: 'https://youtu.be/1BZuEWUt2DI',
     },
   ];
 

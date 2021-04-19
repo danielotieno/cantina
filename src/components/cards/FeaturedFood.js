@@ -142,7 +142,7 @@ export default () => {
         </TabContent>
         <ButtonContainer>
           <AllButton>
-            <Link to='/food'>Explore All Videos</Link>
+            <Link to='/food-videos'>Explore All Videos</Link>
           </AllButton>
         </ButtonContainer>
       </ContentWithPaddingXl>
