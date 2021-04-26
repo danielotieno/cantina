@@ -17,6 +17,7 @@ import Jd from 'images/jd.jpeg';
 import PorkRibs from 'images/pork-ribs.jpg';
 import WhiteBread from 'images/White-Bread.jpg';
 import ChickenTikka from 'images/chicken-tikka.jpeg';
+import Brioche from 'images/brioche-burger.png';
 
 const HeaderRow = tw.div`flex justify-between items-center flex-col xl:flex-row`;
 const Header = tw(SectionHeading)``;
@@ -97,6 +98,11 @@ export default ({ heading }) => {
       imageSrc: WhiteBread,
       title: 'White Bread',
       url: 'https://youtu.be/1BZuEWUt2DI',
+    },
+    {
+      imageSrc: Brioche,
+      title: 'Brioche Buns',
+      url: 'https://youtu.be/fxD_FHzLq68',
     },
   ];
 
