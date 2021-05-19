@@ -107,7 +107,7 @@ export default ({ heading }) => {
     },
     {
       imageSrc: Chips,
-      title: 'How to make Chip Shop Fish and Chips at Home',
+      title: 'How to make Chip Shop Fish and Chips',
       url: 'https://www.youtube.com/watch?v=L_Q_EwsaRPM',
     },
   ];
