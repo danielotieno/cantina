@@ -23,7 +23,7 @@ export default () => {
       url: 'https://www.instagram.com/p/CLOm7u1j4B3/',
     },
     {
-      url: 'https://www.instagram.com/p/CLfQLgIDZk_/',
+      url: 'https://www.instagram.com/p/CO9rL-Njhw4/',
     },
     {
       url: 'https://www.instagram.com/p/CL_9CbSj9qO/',
@@ -32,7 +32,7 @@ export default () => {
       url: 'https://www.instagram.com/p/CL5DCdjD1zI/',
     },
     {
-      url: 'https://www.instagram.com/p/CH12rirDe0S/',
+      url: 'https://www.instagram.com/p/CN2bPamDKuY/',
     },
   ];
   return (
