@@ -10,9 +10,9 @@ import { PrimaryButton as PrimaryButtonBase } from 'components/misc/Buttons.js';
 import { Container, ContentWithPaddingXl } from 'components/misc/Layouts.js';
 import { ReactComponent as SvgDecoratorBlob1 } from 'images/svg-decorator-blob-5.svg';
 import { ReactComponent as SvgDecoratorBlob2 } from 'images/svg-decorator-blob-7.svg';
-import PizzaDough from 'images/pizza-dough.jpeg';
-import SmokedChicken from 'images/chick.jpg';
-import ChocolateBrownies from 'images/choco.jpg';
+import ChickenTikka from 'images/chicken-tikka.jpeg';
+import Brioche from 'images/brioche-burger.png';
+import Chips from 'images/chipsfish.jpg';
 import Jd from 'images/jd.jpeg';
 import ChickenTikka from 'images/chicken-tikka.jpeg';
 import PorkRibs from 'images/pork-ribs.jpg';
@@ -60,34 +60,34 @@ const DecoratorBlob2 = styled(SvgDecoratorBlob2)`
 export default () => {
   const food = [
     {
+      imageSrc: Chips,
+      title: 'How to make Chip Shop Fish and Chips',
+      url: 'https://www.youtube.com/watch?v=L_Q_EwsaRPM',
+    },
+    {
+      imageSrc: Brioche,
+      title: 'Brioche Buns',
+      url: 'https://youtu.be/fxD_FHzLq68',
+    },
+    {
+      imageSrc: WhiteBread,
+      title: 'White Bread',
+      url: 'https://youtu.be/1BZuEWUt2DI',
+    },
+    {
       imageSrc: ChickenTikka,
       title: 'Traditional Indian Chicken Tikka',
       url: 'https://youtu.be/L_MZzf6b6Z0',
     },
     {
-      imageSrc: PizzaDough,
-      title: 'Pizza Dough',
-      url: 'https://youtu.be/5ay-XRxkdE0',
-    },
-    {
-      imageSrc: SmokedChicken,
-      title: 'Smoked Chicken',
-      url: 'https://youtu.be/b2A7np1vTL8',
-    },
-    {
-      imageSrc: ChocolateBrownies,
-      title: 'Chocolate Brownies',
-      url: 'https://youtu.be/KH4FvGqIfy8',
+      imageSrc: PorkRibs,
+      title: 'BBQ Pork Ribs on the Big Green Egg',
+      url: 'https://youtu.be/_NymmPUJcE0',
     },
     {
       imageSrc: Jd,
       title: "Jack Daniel's Crispy Chicken Wings",
       url: 'https://youtu.be/yLdRClgMltI',
-    },
-    {
-      imageSrc: PorkRibs,
-      title: 'BBQ Pork Ribs on the Big Green Egg',
-      url: 'https://youtu.be/_NymmPUJcE0',
     },
   ];
   return (
