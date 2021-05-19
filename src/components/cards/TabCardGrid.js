@@ -18,6 +18,7 @@ import PorkRibs from 'images/pork-ribs.jpg';
 import WhiteBread from 'images/White-Bread.jpg';
 import ChickenTikka from 'images/chicken-tikka.jpeg';
 import Brioche from 'images/brioche-burger.png';
+import Chips from 'images/chipsfish.jpg';
 
 const HeaderRow = tw.div`flex justify-between items-center flex-col xl:flex-row`;
 const Header = tw(SectionHeading)``;
@@ -103,6 +104,11 @@ export default ({ heading }) => {
       imageSrc: Brioche,
       title: 'Brioche Buns',
       url: 'https://youtu.be/fxD_FHzLq68',
+    },
+    {
+      imageSrc: Chips,
+      title: 'How to make Chip Shop Fish and Chips at Home',
+      url: 'https://www.youtube.com/watch?v=L_Q_EwsaRPM',
     },
   ];
 
