@@ -11,11 +11,11 @@ import { Container, ContentWithPaddingXl } from 'components/misc/Layouts.js';
 import { ReactComponent as SvgDecoratorBlob1 } from 'images/svg-decorator-blob-5.svg';
 import { ReactComponent as SvgDecoratorBlob2 } from 'images/svg-decorator-blob-7.svg';
 import Brioche from 'images/brioche-burger.png';
-import WhiteBread from 'images/White-Bread.jpg';
+import Brisket from 'images/briskett.jpg';
 import Chips from 'images/chipsfish.jpg';
 import Jd from 'images/jd.jpeg';
 import ChickenTikka from 'images/chicken-tikka.jpeg';
-import PorkRibs from 'images/pork-ribs.jpg';
+import SmokedChicken from 'images/chick.jpg';
 
 const Heading = tw(SectionHeading)``;
 
@@ -70,9 +70,9 @@ export default () => {
       url: 'https://youtu.be/fxD_FHzLq68',
     },
     {
-      imageSrc: WhiteBread,
-      title: 'White Bread',
-      url: 'https://youtu.be/1BZuEWUt2DI',
+      imageSrc: Brisket,
+      title: 'Smoke Brisket On Big Green Egg',
+      url: 'https://www.youtube.com/watch?v=7Sqai6IUPH0&t=6s',
     },
     {
       imageSrc: ChickenTikka,
@@ -80,10 +80,11 @@ export default () => {
       url: 'https://youtu.be/L_MZzf6b6Z0',
     },
     {
-      imageSrc: PorkRibs,
-      title: 'BBQ Pork Ribs on the Big Green Egg',
-      url: 'https://youtu.be/_NymmPUJcE0',
+      imageSrc: SmokedChicken,
+      title: 'Smoked Chicken',
+      url: 'https://youtu.be/b2A7np1vTL8',
     },
+
     {
       imageSrc: Jd,
       title: "Jack Daniel's Crispy Chicken Wings",

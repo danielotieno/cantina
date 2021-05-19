@@ -19,6 +19,8 @@ import WhiteBread from 'images/White-Bread.jpg';
 import ChickenTikka from 'images/chicken-tikka.jpeg';
 import Brioche from 'images/brioche-burger.png';
 import Chips from 'images/chipsfish.jpg';
+import Brisket from 'images/briskett.jpg';
+import Carbonara from 'images/carbonara.jpg';
 
 const HeaderRow = tw.div`flex justify-between items-center flex-col xl:flex-row`;
 const Header = tw(SectionHeading)``;
@@ -61,9 +63,24 @@ const DecoratorBlob2 = styled(SvgDecoratorBlob2)`
 export default ({ heading }) => {
   const foods = [
     {
+      imageSrc: Chips,
+      title: 'How to make Chip Shop Fish and Chips',
+      url: 'https://www.youtube.com/watch?v=L_Q_EwsaRPM',
+    },
+    {
+      imageSrc: Brioche,
+      title: 'Brioche Buns',
+      url: 'https://youtu.be/fxD_FHzLq68',
+    },
+    {
       imageSrc: PizzaDough,
       title: 'Pizza Dough',
       url: 'https://youtu.be/5ay-XRxkdE0',
+    },
+    {
+      imageSrc: Brisket,
+      title: 'Smoke Brisket On Big Green Egg',
+      url: 'https://www.youtube.com/watch?v=7Sqai6IUPH0&t=6s',
     },
     {
       imageSrc: SmokedChicken,
@@ -101,14 +118,9 @@ export default ({ heading }) => {
       url: 'https://youtu.be/1BZuEWUt2DI',
     },
     {
-      imageSrc: Brioche,
-      title: 'Brioche Buns',
-      url: 'https://youtu.be/fxD_FHzLq68',
-    },
-    {
-      imageSrc: Chips,
-      title: 'How to make Chip Shop Fish and Chips',
-      url: 'https://www.youtube.com/watch?v=L_Q_EwsaRPM',
+      imageSrc: Carbonara,
+      title: 'Traditional Spaghetti Carbonara',
+      url: 'https://www.youtube.com/watch?v=OXn5wn6Pp5c&t=33s',
     },
   ];
 
