@@ -1,26 +1,26 @@
-import React from 'react';
-import { ExternalLink } from 'react-external-link';
-import { motion } from 'framer-motion';
-import tw from 'twin.macro';
-import styled from 'styled-components';
-import { css } from 'styled-components/macro'; //eslint-disable-line
-import { Container, ContentWithPaddingXl } from 'components/misc/Layouts.js';
-import { SectionHeading } from 'components/misc/Headings.js';
 import { PrimaryButton as PrimaryButtonBase } from 'components/misc/Buttons.js';
-import { ReactComponent as SvgDecoratorBlob1 } from 'images/svg-decorator-blob-5.svg';
-import { ReactComponent as SvgDecoratorBlob2 } from 'images/svg-decorator-blob-7.svg';
-import PizzaDough from 'images/pizza-dough.jpeg';
-import SmokedChicken from 'images/chick.jpg';
-import ChocolateBrownies from 'images/choco.jpg';
-import ChickenBalls from 'images/chicken-balls.jpg';
-import Jd from 'images/jd.jpeg';
-import PorkRibs from 'images/pork-ribs.jpg';
-import WhiteBread from 'images/White-Bread.jpg';
-import ChickenTikka from 'images/chicken-tikka.jpeg';
+import { SectionHeading } from 'components/misc/Headings.js';
+import { Container, ContentWithPaddingXl } from 'components/misc/Layouts.js';
+import { motion } from 'framer-motion';
 import Brioche from 'images/brioche-burger.png';
-import Chips from 'images/chipsfish.jpg';
 import Brisket from 'images/briskett.jpg';
 import Carbonara from 'images/carbonara.jpg';
+import SmokedChicken from 'images/chick.jpg';
+import ChickenBalls from 'images/chicken-balls.jpg';
+import ChickenTikka from 'images/chicken-tikka.jpeg';
+import Chips from 'images/chipsfish.jpg';
+import ChocolateBrownies from 'images/choco.jpg';
+import Jd from 'images/jd.jpeg';
+import PizzaDough from 'images/pizza-dough.jpeg';
+import PorkRibs from 'images/pork-ribs.jpg';
+import { ReactComponent as SvgDecoratorBlob1 } from 'images/svg-decorator-blob-5.svg';
+import { ReactComponent as SvgDecoratorBlob2 } from 'images/svg-decorator-blob-7.svg';
+import WhiteBread from 'images/White-Bread.jpg';
+import React from 'react';
+import { ExternalLink } from 'react-external-link';
+import styled from 'styled-components';
+import { css } from 'styled-components/macro'; //eslint-disable-line
+import tw from 'twin.macro';
 
 const HeaderRow = tw.div`flex justify-between items-center flex-col xl:flex-row`;
 const Header = tw(SectionHeading)``;
@@ -60,7 +60,7 @@ const DecoratorBlob2 = styled(SvgDecoratorBlob2)`
   ${tw`absolute bottom-0 left-0 transform pointer-events-none -z-20 h-80 w-80 opacity-15 -translate-x-2/3 text-primary-500`}
 `;
 
-export default ({ heading }) => {
+const TabCardGrid = ({ heading }) => {
   const foods = [
     {
       imageSrc: Chips,
@@ -182,3 +182,5 @@ export default ({ heading }) => {
     </Container>
   );
 };
+
+export default TabCardGrid;

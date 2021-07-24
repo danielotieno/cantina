@@ -1,11 +1,11 @@
-import React from 'react';
-import HeroSecton from 'components/hsection/HeroSection';
 // import FeaturedCities from 'components/cards/FeaturedCities';
 import FeaturedFood from 'components/cards/FeaturedFood';
 import InstagramFeed from 'components/cards/InstagramFeed';
 import MiniCenteredFooter from 'components/footers/MiniCenteredFooter';
+import HeroSecton from 'components/hsection/HeroSection';
+import React from 'react';
 
-export default () => {
+const Home = () => {
   return (
     <>
       <HeroSecton />
@@ -16,3 +16,5 @@ export default () => {
     </>
   );
 };
+
+export default Home;

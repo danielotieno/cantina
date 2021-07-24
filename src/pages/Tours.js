@@ -1,13 +1,13 @@
+import MiniCenteredFooter from 'components/footers/MiniCenteredFooter';
+import Header from 'components/headers/light.js';
+import { SectionHeading as HeadingTitle } from 'components/misc/Headings';
+import { ReactComponent as LocationIcon } from 'feather-icons/dist/icons/map-pin.svg';
+import { ReactComponent as SvgDecoratorBlob1 } from 'images/svg-decorator-blob-1.svg';
+import { ReactComponent as SvgDecoratorBlob2 } from 'images/svg-decorator-blob-3.svg';
 import React from 'react';
 import { ExternalLink } from 'react-external-link';
-import tw from 'twin.macro';
 import styled from 'styled-components';
-import { SectionHeading as HeadingTitle } from 'components/misc/Headings';
-import { ReactComponent as SvgDecoratorBlob1 } from 'images/svg-decorator-blob-1.svg';
-import { ReactComponent as LocationIcon } from 'feather-icons/dist/icons/map-pin.svg';
-import { ReactComponent as SvgDecoratorBlob2 } from 'images/svg-decorator-blob-3.svg';
-import Header from 'components/headers/light.js';
-import MiniCenteredFooter from 'components/footers/MiniCenteredFooter';
+import tw from 'twin.macro';
 
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
@@ -20,7 +20,7 @@ const HeadingDescription = tw.p`mt-4 font-medium text-secondary-400 text-center 
 const Card = tw.div`lg:mx-4 xl:mx-8 max-w-sm lg:max-w-xs`;
 const Image = styled.div((props) => [
   `background-image: url("${props.imageSrc}");`,
-  tw`bg-cover bg-center h-80 lg:h-64 rounded mb-2`,
+  tw`mb-2 bg-center bg-cover rounded h-80 lg:h-64`,
 ]);
 
 const Title = tw.h4`mt-2 leading-relaxed font-bold text-lg`;
@@ -29,7 +29,7 @@ const WatchLink = tw.a`inline-block mt-2 text-sm text-primary-500 font-bold curs
 
 const IconWithText = tw.div`flex items-center mr-6 my-2 sm:my-0`;
 const IconContainer = styled.div`
-  ${tw`inline-block rounded-full p-2 bg-gray-700 text-gray-100`}
+  ${tw`inline-block p-2 text-gray-100 bg-gray-700 rounded-full`}
   svg {
     ${tw`w-3 h-3`}
   }
@@ -43,7 +43,7 @@ const DecoratorBlob2 = tw(
   SvgDecoratorBlob2,
 )`-z-10 absolute top-0 left-0 w-48 h-48 transform -translate-x-32 translate-y-full opacity-25`;
 
-export default () => {
+const Tours = () => {
   const tourPosts = [
     {
       imageSrc:
@@ -125,3 +125,5 @@ export default () => {
     </Container>
   );
 };
+
+export default Tours;

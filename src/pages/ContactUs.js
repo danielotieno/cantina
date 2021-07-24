@@ -1,22 +1,21 @@
-import React from 'react';
-import tw from 'twin.macro';
-import styled from 'styled-components';
-import { css } from 'styled-components/macro'; //eslint-disable-line
-import Header from 'components/headers/light.js';
 import MiniCenteredFooter from 'components/footers/MiniCenteredFooter';
+import Header from 'components/headers/light.js';
+import { PrimaryButton as PrimaryButtonBase } from 'components/misc/Buttons.js';
 import {
   SectionHeading,
   Subheading as SubheadingBase,
 } from 'components/misc/Headings.js';
-import { PrimaryButton as PrimaryButtonBase } from 'components/misc/Buttons.js';
 import EmailIllustrationSrc from 'images/email-illustration.svg';
+import React from 'react';
+import styled from 'styled-components';
+import tw from 'twin.macro';
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-10 md:py-12`;
 const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
 const ImageColumn = tw(Column)`md:w-5/12 flex-shrink-0 h-80 md:h-auto`;
 const TextColumn = styled(Column)((props) => [
-  tw`md:w-7/12 mt-16 md:mt-0`,
+  tw`mt-16 md:w-7/12 md:mt-0`,
   props.textOnLeft
     ? tw`md:mr-12 lg:mr-16 md:order-first`
     : tw`md:ml-12 lg:ml-16 md:order-last`,
@@ -24,7 +23,7 @@ const TextColumn = styled(Column)((props) => [
 
 const Image = styled.div((props) => [
   `background-image: url("${props.imageSrc}");`,
-  tw`rounded bg-contain bg-no-repeat bg-center h-full`,
+  tw`h-full bg-center bg-no-repeat bg-contain rounded`,
 ]);
 const TextContent = tw.div`lg:py-8 text-center md:text-left`;
 
@@ -41,7 +40,7 @@ const Textarea = styled(Input).attrs({ as: 'textarea' })`
 
 const SubmitButton = tw(PrimaryButtonBase)`inline-block mt-8`;
 
-export default ({
+const ContactUs = ({
   subheading = 'Contact Us',
   heading = (
     <>
@@ -111,3 +110,5 @@ export default ({
     </>
   );
 };
+
+export default ContactUs;

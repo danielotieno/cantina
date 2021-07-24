@@ -1,12 +1,12 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { ExternalLink } from 'react-external-link';
-import tw from 'twin.macro';
-import styled from 'styled-components';
-import { SectionHeading as HeadingTitle } from '../misc/Headings.js';
-import { ReactComponent as SvgDecoratorBlob1 } from '../../images/svg-decorator-blob-1.svg';
 import { ReactComponent as LocationIcon } from 'feather-icons/dist/icons/map-pin.svg';
+import React from 'react';
+import { ExternalLink } from 'react-external-link';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+import tw from 'twin.macro';
+import { ReactComponent as SvgDecoratorBlob1 } from '../../images/svg-decorator-blob-1.svg';
 import { ReactComponent as SvgDecoratorBlob2 } from '../../images/svg-decorator-blob-3.svg';
+import { SectionHeading as HeadingTitle } from '../misc/Headings.js';
 
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
@@ -19,7 +19,7 @@ const HeadingDescription = tw.p`mt-4 font-medium text-secondary-400 text-center 
 const Card = tw.div`lg:mx-4 xl:mx-8 max-w-sm lg:max-w-xs`;
 const Image = styled.div((props) => [
   `background-image: url("${props.imageSrc}");`,
-  tw`bg-cover bg-center h-80 lg:h-64 rounded mb-2`,
+  tw`mb-2 bg-center bg-cover rounded h-80 lg:h-64`,
 ]);
 
 const Title = tw.h4`mt-2 leading-relaxed font-bold text-lg`;
@@ -28,7 +28,7 @@ const WatchLink = tw.a`inline-block mt-2 text-sm text-primary-500 font-bold curs
 
 const IconWithText = tw.div`flex items-center mr-6 my-2 sm:my-0`;
 const IconContainer = styled.div`
-  ${tw`inline-block rounded-full p-2 bg-gray-700 text-gray-100`}
+  ${tw`inline-block p-2 text-gray-100 bg-gray-700 rounded-full`}
   svg {
     ${tw`w-3 h-3`}
   }
@@ -46,7 +46,7 @@ const ButtonContainer = tw.div`flex justify-center mt-3`;
 
 const AllButton = tw.button`inline-block rounded justify-center items-center font-bold px-8 lg:px-10 py-3 rounded bg-orange-600 text-gray-100 hocus:bg-orange-700 focus:shadow-outline focus:outline-none transition duration-300 `;
 
-export default () => {
+const FeaturedCities = () => {
   const tourPosts = [
     {
       imageSrc:
@@ -110,3 +110,5 @@ export default () => {
     </Container>
   );
 };
+
+export default FeaturedCities;

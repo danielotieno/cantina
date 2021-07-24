@@ -1,21 +1,21 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { ExternalLink } from 'react-external-link';
-import { motion } from 'framer-motion';
-import tw from 'twin.macro';
-import styled from 'styled-components';
-import { css } from 'styled-components/macro'; //eslint-disable-line
-import { SectionHeading } from 'components/misc/Headings.js';
 import { PrimaryButton as PrimaryButtonBase } from 'components/misc/Buttons.js';
+import { SectionHeading } from 'components/misc/Headings.js';
 import { Container, ContentWithPaddingXl } from 'components/misc/Layouts.js';
-import { ReactComponent as SvgDecoratorBlob1 } from 'images/svg-decorator-blob-5.svg';
-import { ReactComponent as SvgDecoratorBlob2 } from 'images/svg-decorator-blob-7.svg';
+import { motion } from 'framer-motion';
 import Brioche from 'images/brioche-burger.png';
 import Brisket from 'images/briskett.jpg';
+import SmokedChicken from 'images/chick.jpg';
+import ChickenTikka from 'images/chicken-tikka.jpeg';
 import Chips from 'images/chipsfish.jpg';
 import Jd from 'images/jd.jpeg';
-import ChickenTikka from 'images/chicken-tikka.jpeg';
-import SmokedChicken from 'images/chick.jpg';
+import { ReactComponent as SvgDecoratorBlob1 } from 'images/svg-decorator-blob-5.svg';
+import { ReactComponent as SvgDecoratorBlob2 } from 'images/svg-decorator-blob-7.svg';
+import React from 'react';
+import { ExternalLink } from 'react-external-link';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+import { css } from 'styled-components/macro'; //eslint-disable-line
+import tw from 'twin.macro';
 
 const Heading = tw(SectionHeading)``;
 
@@ -57,7 +57,7 @@ const DecoratorBlob2 = styled(SvgDecoratorBlob2)`
   ${tw`absolute bottom-0 left-0 transform pointer-events-none -z-20 h-80 w-80 opacity-15 -translate-x-2/3 text-primary-500`}
 `;
 
-export default () => {
+const FeaturedFood = () => {
   const food = [
     {
       imageSrc: Chips,
@@ -152,3 +152,5 @@ export default () => {
     </Container>
   );
 };
+
+export default FeaturedFood;

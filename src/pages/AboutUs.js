@@ -1,15 +1,13 @@
-import React from 'react';
-import { css } from 'styled-components/macro'; //eslint-disable-line
-import Header from 'components/headers/light.js';
-import MainFeature1 from 'components/features/TwoColWithButton.js';
-
-import Features from 'components/features/ThreeColSimple.js';
 import TeamCardGrid from 'components/cards/ProfileThreeColGrid.js';
+import Features from 'components/features/ThreeColSimple.js';
+import MainFeature1 from 'components/features/TwoColWithButton.js';
 import MiniCenteredFooter from 'components/footers/MiniCenteredFooter';
-import MissionImg from '../images/mission-img.jpg';
+import Header from 'components/headers/light.js';
+import React from 'react';
 import AbtImg from '../images/abt-img.jpg';
+import MissionImg from '../images/mission-img.jpg';
 
-export default () => {
+const AboutUs = () => {
   return (
     <>
       <Header />
@@ -36,3 +34,5 @@ export default () => {
     </>
   );
 };
+
+export default AboutUs;

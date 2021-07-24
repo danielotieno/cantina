@@ -1,21 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { ExternalLink } from 'react-external-link';
-
-import { css } from 'styled-components/macro'; //eslint-disable-line
-import tw from 'twin.macro';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-
+import tw from 'twin.macro';
 import bgImage from '../../images/beef.jpg';
+// import bgVideo from '../../images/food-bg.mp4';
 import Subscribe from '../../images/yout.png';
-
 import Header, {
+  ContactLink as PrimaryLinkBase,
+  DesktopNavLinks,
+  LogoLink,
   NavLink,
   NavLinks,
-  ContactLink as PrimaryLinkBase,
-  LogoLink,
   NavToggle,
-  DesktopNavLinks,
 } from '../headers/light.js';
 
 const PrimaryLink = tw(PrimaryLinkBase)`rounded-full`;
@@ -49,7 +46,7 @@ const Heading = styled.h1`
 
 const YouSub = tw.div`h-40 w-40 mt-8`;
 
-export default () => {
+const HeroBack = () => {
   const navLinks = [
     <NavLinks key={1}>
       <NavLink>
@@ -94,3 +91,5 @@ export default () => {
     </Container>
   );
 };
+
+export default HeroBack;

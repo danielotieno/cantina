@@ -1,15 +1,15 @@
+import { SectionHeading } from 'components/misc/Headings';
+import { Container, ContentWithPaddingXl } from 'components/misc/Layouts.js';
+import { SectionDescription } from 'components/misc/Typography';
+import { ReactComponent as FacebookIcon } from 'images/facebook-icon.svg';
+import { ReactComponent as InstagramIcon } from 'images/insta.svg';
+import Maguire from 'images/maguire.jpg';
+import Daniel from 'images/pp.jpg';
+import { ReactComponent as TwitterIcon } from 'images/twitter-icon.svg';
 import React from 'react';
-import tw from 'twin.macro';
 import styled from 'styled-components';
 import { css } from 'styled-components/macro';
-import { Container, ContentWithPaddingXl } from 'components/misc/Layouts.js';
-import { SectionHeading } from 'components/misc/Headings';
-import { SectionDescription } from 'components/misc/Typography';
-import { ReactComponent as TwitterIcon } from 'images/twitter-icon.svg';
-import { ReactComponent as InstagramIcon } from 'images/insta.svg';
-import { ReactComponent as FacebookIcon } from 'images/facebook-icon.svg';
-import Daniel from 'images/pp.jpg';
-import Maguire from 'images/maguire.jpg';
+import tw from 'twin.macro';
 
 const HeadingContainer = tw.div``;
 const Heading = tw(SectionHeading)``;
@@ -44,7 +44,7 @@ const CardLinks = styled.div`
   }
 `;
 
-export default ({
+const ProfileThreeColGrid = ({
   heading = 'Meet The Team',
   description = 'Coming together is a beginning, staying together is progress, and working together is success. – Henry Ford ',
   cards = [
@@ -117,3 +117,5 @@ export default ({
     </Container>
   );
 };
+
+export default ProfileThreeColGrid;

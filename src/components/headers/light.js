@@ -1,15 +1,12 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import tw from 'twin.macro';
-import styled from 'styled-components';
-import { css } from 'styled-components/macro'; //eslint-disable-line
-
-import useAnimatedNavToggler from '../../helpers/useAnimatedNavToggler.js';
-
-import logo from '../../images/logo.png';
 import { ReactComponent as MenuIcon } from 'feather-icons/dist/icons/menu.svg';
 import { ReactComponent as CloseIcon } from 'feather-icons/dist/icons/x.svg';
+import { motion } from 'framer-motion';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+import tw from 'twin.macro';
+import useAnimatedNavToggler from '../../helpers/useAnimatedNavToggler.js';
+import logo from '../../images/logo.png';
 
 const Header = tw.header`
   flex justify-between items-center
@@ -53,12 +50,12 @@ export const MobileNavLinksContainer = tw.nav`flex flex-1 items-center justify-b
 export const NavToggle = tw.button`
   lg:hidden z-20 focus:outline-none hocus:text-primary-500 transition duration-300
 `;
-export const MobileNavLinks = motion.custom(styled.div`
+export const MobileNavLinks = styled(motion.div)`
   ${tw`fixed inset-x-0 top-0 z-10 p-8 mx-4 my-6 text-center text-gray-900 bg-white border rounded-lg lg:hidden`}
   ${NavLinks} {
     ${tw`flex flex-col items-center`}
   }
-`);
+`;
 
 export const DesktopNavLinks = tw.nav`
   hidden lg:flex flex-1 justify-between items-center

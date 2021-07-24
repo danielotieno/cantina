@@ -1,6 +1,8 @@
+import HeroBack from 'components/hero/HeroBack.js';
 import React from 'react';
-import Hero from 'components/hero/HeroBack.js';
 
-export default () => {
-  return <Hero />;
+const HeroSection = () => {
+  return <HeroBack />;
 };
+
+export default HeroSection;

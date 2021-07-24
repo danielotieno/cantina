@@ -1,22 +1,16 @@
-import React, { useState } from 'react';
-import { LiteYouTubeEmbed } from 'react-lite-youtube-embed';
-import styled from 'styled-components';
-import tw from 'twin.macro';
-//eslint-disable-next-line
-import { css } from 'styled-components/macro';
-
-import Header from '../components/headers/light.js';
-
-import ReactModalAdapter from '../helpers/ReactModalAdapter.js';
-import ResponsiveVideoEmbed from '../helpers/ResponsiveVideoEmbed.js';
-
+import { ReactComponent as ClockIcon } from 'feather-icons/dist/icons/clock.svg';
 import { ReactComponent as PlayIcon } from 'feather-icons/dist/icons/play-circle.svg';
 import { ReactComponent as CloseIcon } from 'feather-icons/dist/icons/x.svg';
-import { ReactComponent as SvgDecoratorBlob1 } from '../images/svg-decorator-blob-1.svg';
+import React, { useState } from 'react';
+import LiteYouTubeEmbed from 'react-lite-youtube-embed';
+import styled from 'styled-components';
+import tw from 'twin.macro';
+import Header from '../components/headers/light.js';
+import ReactModalAdapter from '../helpers/ReactModalAdapter.js';
+import ResponsiveVideoEmbed from '../helpers/ResponsiveVideoEmbed.js';
 import { ReactComponent as SvgDecoratorBlob2 } from '../images/dot-pattern.svg';
 import DesignIllustration from '../images/pizza.jpg';
-
-import { ReactComponent as ClockIcon } from 'feather-icons/dist/icons/clock.svg';
+import { ReactComponent as SvgDecoratorBlob1 } from '../images/svg-decorator-blob-1.svg';
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col lg:flex-row md:items-center max-w-screen-xl mx-auto py-20 md:py-24`;
@@ -30,9 +24,9 @@ const Paragraph = tw.p`my-5 lg:my-8 text-sm lg:text-base font-medium text-gray-6
 const Actions = tw.div`flex flex-col items-center sm:flex-row justify-center lg:justify-start mt-8`;
 
 const WatchVideoButton = styled.button`
-  ${tw`mt-4 sm:mt-0 flex items-center text-secondary-300 transition duration-300 hocus:text-primary-400 focus:outline-none`}
+  ${tw`flex items-center mt-4 transition duration-300 sm:mt-0 text-secondary-300 hocus:text-primary-400 focus:outline-none`}
   .playIcon {
-    ${tw`stroke-1 w-12 h-12`}
+    ${tw`w-12 h-12 stroke-1`}
   }
   .playText {
     ${tw`ml-2 font-medium`}
@@ -43,10 +37,10 @@ const IllustrationContainer = tw.div`flex justify-center md:justify-end items-ce
 
 // Random Decorator Blobs (shapes that you see in background)
 const DecoratorBlob1 = styled(SvgDecoratorBlob1)`
-  ${tw`pointer-events-none opacity-5 absolute left-0 bottom-0 h-64 w-64 transform -translate-x-2/3  -z-10`}
+  ${tw`absolute bottom-0 left-0 w-64 h-64 transform pointer-events-none opacity-5 -translate-x-2/3 -z-10`}
 `;
 const DecoratorBlob2 = styled(SvgDecoratorBlob2)`
-  ${tw`pointer-events-none fill-current text-primary-500 opacity-25 absolute w-32 h-32 right-0 bottom-0 transform translate-x-10 translate-y-10 -z-10`}
+  ${tw`absolute bottom-0 right-0 w-32 h-32 transform translate-x-10 translate-y-10 opacity-25 pointer-events-none fill-current text-primary-500 -z-10`}
 `;
 
 const StyledModal = styled(ReactModalAdapter)`
@@ -54,7 +48,7 @@ const StyledModal = styled(ReactModalAdapter)`
     ${tw`fixed inset-0 z-50`}
   }
   &.mainHeroModal__content {
-    ${tw`xl:mx-auto m-4 sm:m-16 max-w-screen-xl absolute inset-0 flex justify-center items-center rounded-lg bg-gray-200 outline-none`}
+    ${tw`absolute inset-0 flex items-center justify-center max-w-screen-xl m-4 bg-gray-200 rounded-lg outline-none xl:mx-auto sm:m-16`}
   }
   .content {
     ${tw`w-full lg:p-16`}
@@ -67,10 +61,10 @@ const Feature = tw.div`mt-10 lg:mt-8 flex items-center md:items-start flex-col m
 
 const FeatureHeadingContainer = tw.div`flex items-center`;
 const FeatureIconContainer = styled.div`
-  ${tw`mx-auto inline-block border border-primary-500 text-primary-500 text-center rounded p-2 flex-shrink-0`}
+  ${tw`flex-shrink-0 inline-block p-2 mx-auto text-center border rounded border-primary-500 text-primary-500`}
   ${(props) => [
     props.iconRoundedFull && tw`rounded-full`,
-    props.iconFilled && tw`border-0 bg-primary-500 text-gray-100`,
+    props.iconFilled && tw`text-gray-100 border-0 bg-primary-500`,
   ]}
   svg {
     ${tw`w-5 h-5`}
@@ -78,7 +72,7 @@ const FeatureIconContainer = styled.div`
 `;
 const FeatureHeading = tw.div`ml-3 font-bold text-xl`;
 
-export default ({
+const FoodDetail = ({
   heading = 'How to make pizza dough',
   description = 'Making your own pizza base is easier than you think. The great thing about learning how to make pizza dough recipe is that it can be made in advance, and even frozen, so you can dial up a pizza in minutes.',
   watchVideoButtonText = 'Watch Video',
@@ -99,12 +93,12 @@ export default ({
     {
       Icon: ClockIcon,
       title: 'Preparation: 30 mins',
-      iconContainerCss: tw`bg-teal-300 text-teal-800`,
+      iconContainerCss: tw`text-teal-800 bg-teal-300`,
     },
     {
       Icon: ClockIcon,
       title: 'Cooking: 1 to 2 hours',
-      iconContainerCss: tw`bg-red-300 text-red-800`,
+      iconContainerCss: tw`text-red-800 bg-red-300`,
     },
   ];
 
@@ -243,3 +237,5 @@ export default ({
     </>
   );
 };
+
+export default FoodDetail;

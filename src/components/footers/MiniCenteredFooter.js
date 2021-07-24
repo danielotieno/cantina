@@ -1,14 +1,14 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { ExternalLink } from 'react-external-link';
-import tw from 'twin.macro';
-import styled from 'styled-components';
 import { Container as ContainerBase } from 'components/misc/Layouts.js';
-import logo from '../../images/logo.png';
+import React from 'react';
+import { ExternalLink } from 'react-external-link';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+import tw from 'twin.macro';
 import { ReactComponent as FacebookIcon } from '../../images/facebook-icon.svg';
 import { ReactComponent as InstagramIcon } from '../../images/insta.svg';
-import { ReactComponent as YoutubeIcon } from '../../images/youtube-icon.svg';
+import logo from '../../images/logo.png';
 import { ReactComponent as TwitterIcon } from '../../images/twitter-icon.svg';
+import { ReactComponent as YoutubeIcon } from '../../images/youtube-icon.svg';
 
 const Container = tw(ContainerBase)`bg-gray-900 text-gray-100 -mx-8 -mb-8`;
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
@@ -32,7 +32,8 @@ const SocialLink = styled.a`
 `;
 
 const CopyrightText = tw.p`text-center mt-10 font-medium tracking-wide text-sm text-gray-600`;
-export default () => {
+
+const MiniCenteredFooter = () => {
   return (
     <Container>
       <Content>
@@ -88,3 +89,5 @@ export default () => {
     </Container>
   );
 };
+
+export default MiniCenteredFooter;

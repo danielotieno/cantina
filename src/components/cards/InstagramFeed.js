@@ -1,10 +1,10 @@
+import { SectionHeading } from 'components/misc/Headings';
+import { Container } from 'components/misc/Layouts.js';
 import React from 'react';
 import InstagramEmbed from 'react-instagram-embed';
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import { SectionHeading } from 'components/misc/Headings';
 
-import { Container } from 'components/misc/Layouts.js';
 const Heading = tw(SectionHeading)`pb-5`;
 // const Content = tw.div`max-w-screen-xl mx-auto`;
 
@@ -14,7 +14,7 @@ const ThreeColumnContainer = styled.div`
 
 const PostsContainer = tw.div`inline-block px-2 mt-4 items-center rounded shadow-lg border-b border-gray-700`;
 
-export default () => {
+const InstagramFeed = () => {
   const posts = [
     {
       url: 'https://www.instagram.com/p/CK3KvUPD-GR/',
@@ -60,3 +60,5 @@ export default () => {
     </Container>
   );
 };
+
+export default InstagramFeed;
